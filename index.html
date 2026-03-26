@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Denmark's 2026 Government</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="page-header">
+        <h1>Build Denmark's 2026 Government</h1>
+        <p>
+          Move parties between the two columns to test possible coalition governments in the
+          2026 Danish election.
+        </p>
+      </header>
+
+      <section class="status-panel" aria-live="polite">
+        <p class="seat-count">
+          Government seats:
+          <strong id="government-seat-total">0</strong>
+          / 179
+        </p>
+        <p class="seat-count">
+          Not in government:
+          <strong id="opposition-seat-total">179</strong>
+          / 179
+        </p>
+        <p class="majority-message" id="majority-message"></p>
+      </section>
+
+      <section class="stacked-bars" aria-label="Seat distribution bars">
+        <article class="bar-card">
+          <h2>In government</h2>
+          <div id="government-bar" class="stacked-bar" role="img" aria-label="Government seat bar"></div>
+        </article>
+        <article class="bar-card">
+          <h2>Not in government</h2>
+          <div
+            id="opposition-bar"
+            class="stacked-bar"
+            role="img"
+            aria-label="Not in government seat bar"
+          ></div>
+        </article>
+      </section>
+
+      <section class="zones">
+        <article class="zone-card">
+          <h2>In government</h2>
+          <p class="zone-help">Drag parties here or click a party card to move it.</p>
+          <ul
+            id="government-zone"
+            class="party-zone"
+            data-zone="government"
+            aria-label="Parties in government"
+          ></ul>
+        </article>
+
+        <article class="zone-card">
+          <h2>Not in government</h2>
+          <p class="zone-help">All parties start here.</p>
+          <ul
+            id="opposition-zone"
+            class="party-zone"
+            data-zone="opposition"
+            aria-label="Parties not in government"
+          ></ul>
+        </article>
+      </section>
+
+      <section class="commentary">
+        <h2>Most likely combinations</h2>
+        <p class="commentary-intro">
+          Based on post-election positions and coalition talks, these combinations were among the
+          most discussed.
+        </p>
+        <div id="likely-match" class="likely-match"></div>
+        <ul id="likely-list" class="likely-list"></ul>
+      </section>
+    </main>
+
+    <script src="./src/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f8fb;
+  --panel: #ffffff;
+  --border: #d9deea;
+  --text: #1b2430;
+  --muted: #5b6573;
+  --success: #0f8b4c;
+  --warning: #9a6700;
+  --danger: #b42318;
+  --shadow: 0 8px 24px rgba(26, 33, 52, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.status-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  align-items: center;
+}
+
+.seat-count,
+.majority-message {
+  margin: 0;
+}
+
+.majority-message.strong-majority {
+  color: var(--success);
+}
+
+.majority-message.weak-majority {
+  color: var(--warning);
+}
+
+.majority-message.no-majority {
+  color: var(--danger);
+}
+
+.stacked-bars {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.bar-card,
+.zone-card,
+.commentary {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.bar-card {
+  padding: 1rem;
+}
+
+.bar-card h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+}
+
+.stacked-bar {
+  min-height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  background: #eef2f8;
+}
+
+.stack-segment {
+  min-width: 2px;
+  height: 40px;
+  position: relative;
+}
+
+.stack-segment::after {
+  content: attr(data-short);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  opacity: 0.9;
+}
+
+.zones {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.zone-card {
+  padding: 1rem;
+}
+
+.zone-card h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.zone-help {
+  margin: 0.35rem 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.party-zone {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 190px;
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  background: #fafbfd;
+}
+
+.party-zone.drag-over {
+  border-color: #95a7da;
+  background: #f2f5ff;
+}
+
+.party-item {
+  margin: 0.55rem;
+  border: 1px solid var(--border);
+  border-left: 10px solid var(--party-color, #999);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.party-btn {
+  all: unset;
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  cursor: pointer;
+}
+
+.party-btn:focus-visible {
+  outline: 3px solid #a7baf2;
+  outline-offset: 1px;
+  border-radius: 9px;
+}
+
+.party-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.party-name {
+  font-weight: 700;
+}
+
+.party-seats {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.party-meta {
+  margin-top: 0.2rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.commentary {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.commentary h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.commentary-intro {
+  margin: 0.4rem 0 0.7rem;
+  color: var(--muted);
+}
+
+.likely-match {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fbfcff;
+  margin-bottom: 0.65rem;
+  color: var(--text);
+}
+
+.likely-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.likely-list li {
+  margin: 0.35rem 0;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 1rem 0.75rem 2rem;
+  }
+
+  .stack-segment::after {
+    font-size: 0.65rem;
+  }
+}
