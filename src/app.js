@@ -2,22 +2,134 @@ const TOTAL_SEATS = 179;
 const MAJORITY = 90;
 
 const parties = [
-  { id: "A", name: "Social Democrats", seats: 38, leader: "Mette Frederiksen", color: "#c62828" },
-  { id: "F", name: "Green Left", seats: 20, leader: "Pia Olsen Dyhr", color: "#2e7d32" },
-  { id: "V", name: "Venstre", seats: 18, leader: "Troels Lund Poulsen", color: "#1565c0" },
-  { id: "I", name: "Liberal Alliance", seats: 16, leader: "Alex Vanopslagh", color: "#7b1fa2" },
-  { id: "O", name: "Danish People's Party", seats: 16, leader: "Morten Messerschmidt", color: "#ff8f00" },
-  { id: "M", name: "Moderates", seats: 14, leader: "Lars Lokke Rasmussen", color: "#00838f" },
-  { id: "C", name: "Conservatives", seats: 13, leader: "Mona Juul", color: "#3949ab" },
-  { id: "OE", name: "Red-Green Alliance", seats: 11, leader: "Pelle Dragsted", color: "#d81b60" },
-  { id: "B", name: "Social Liberals", seats: 10, leader: "Martin Lidegaard", color: "#f4511e" },
-  { id: "AE", name: "Denmark Democrats", seats: 10, leader: "Inger Stojberg", color: "#6d4c41" },
-  { id: "AA", name: "The Alternative", seats: 5, leader: "Franciska Rosenkilde", color: "#43a047" },
-  { id: "H", name: "Citizens' Party", seats: 4, leader: "Lars Boje Mathiesen", color: "#546e7a" },
-  { id: "JF", name: "Social Democratic Party (Faroe Islands)", seats: 1, leader: "Aksel V. Johannesen", color: "#ef5350" },
-  { id: "SF", name: "Union Party (Faroe Islands)", seats: 1, leader: "Bardur a Steig Nielsen", color: "#3f51b5" },
-  { id: "IA", name: "Inuit Ataqatigiit (Greenland)", seats: 1, leader: "Mute Bourup Egede", color: "#26a69a" },
-  { id: "N", name: "Naleraq (Greenland)", seats: 1, leader: "Pele Broberg", color: "#8d6e63" },
+  {
+    id: "A",
+    name: "Social Democrats",
+    seats: 38,
+    leader: "Mette Frederiksen",
+    color: "#c62828",
+    lrScore: 4.2,
+  },
+  {
+    id: "F",
+    name: "Green Left",
+    seats: 20,
+    leader: "Pia Olsen Dyhr",
+    color: "#2e7d32",
+    lrScore: 3.4,
+  },
+  {
+    id: "V",
+    name: "Venstre",
+    seats: 18,
+    leader: "Troels Lund Poulsen",
+    color: "#1565c0",
+    lrScore: 6.2,
+  },
+  {
+    id: "I",
+    name: "Liberal Alliance",
+    seats: 16,
+    leader: "Alex Vanopslagh",
+    color: "#7b1fa2",
+    lrScore: 8.2,
+  },
+  {
+    id: "O",
+    name: "Danish People's Party",
+    seats: 16,
+    leader: "Morten Messerschmidt",
+    color: "#ff8f00",
+    lrScore: 8.7,
+  },
+  {
+    id: "M",
+    name: "Moderates",
+    seats: 14,
+    leader: "Lars Lokke Rasmussen",
+    color: "#00838f",
+    lrScore: 5.3,
+  },
+  {
+    id: "C",
+    name: "Conservatives",
+    seats: 13,
+    leader: "Mona Juul",
+    color: "#3949ab",
+    lrScore: 6.8,
+  },
+  {
+    id: "OE",
+    name: "Red-Green Alliance",
+    seats: 11,
+    leader: "Pelle Dragsted",
+    color: "#d81b60",
+    lrScore: 2.0,
+  },
+  {
+    id: "B",
+    name: "Social Liberals",
+    seats: 10,
+    leader: "Martin Lidegaard",
+    color: "#f4511e",
+    lrScore: 4.8,
+  },
+  {
+    id: "AE",
+    name: "Denmark Democrats",
+    seats: 10,
+    leader: "Inger Stojberg",
+    color: "#6d4c41",
+    lrScore: 7.7,
+  },
+  {
+    id: "AA",
+    name: "The Alternative",
+    seats: 5,
+    leader: "Franciska Rosenkilde",
+    color: "#43a047",
+    lrScore: 2.8,
+  },
+  {
+    id: "H",
+    name: "Citizens' Party",
+    seats: 4,
+    leader: "Lars Boje Mathiesen",
+    color: "#546e7a",
+    lrScore: 9.1,
+  },
+  {
+    id: "JF",
+    name: "Social Democratic Party (Faroe Islands)",
+    seats: 1,
+    leader: "Aksel V. Johannesen",
+    color: "#ef5350",
+    lrScore: 4.5,
+  },
+  {
+    id: "SF",
+    name: "Union Party (Faroe Islands)",
+    seats: 1,
+    leader: "Bardur a Steig Nielsen",
+    color: "#3f51b5",
+    lrScore: 6.3,
+  },
+  {
+    id: "IA",
+    name: "Inuit Ataqatigiit (Greenland)",
+    seats: 1,
+    leader: "Mute Bourup Egede",
+    color: "#26a69a",
+    lrScore: 3.6,
+  },
+  {
+    id: "N",
+    name: "Naleraq (Greenland)",
+    seats: 1,
+    leader: "Pele Broberg",
+    color: "#8d6e63",
+    lrScore: 6.9,
+  },
 ];
 
 const likelyCoalitions = [
@@ -38,6 +150,22 @@ const likelyCoalitions = [
   },
 ];
 
+const presetCoalitions = [
+  { id: "none", label: "Clear all", partyIds: [] },
+  { id: "red", label: "Red bloc", partyIds: ["A", "F", "OE", "B", "AA"] },
+  { id: "blue", label: "Blue bloc", partyIds: ["V", "I", "O", "C", "AE", "H"] },
+  {
+    id: "svm",
+    label: "Former SVM core",
+    partyIds: ["A", "V", "M"],
+  },
+  {
+    id: "red-plus-m",
+    label: "Red + Moderates",
+    partyIds: ["A", "F", "OE", "B", "AA", "M"],
+  },
+];
+
 const state = {
   government: new Set(),
 };
@@ -51,6 +179,7 @@ const oppositionSeatTotal = document.querySelector("#opposition-seat-total");
 const majorityMessage = document.querySelector("#majority-message");
 const likelyMatch = document.querySelector("#likely-match");
 const likelyList = document.querySelector("#likely-list");
+const presetButtons = document.querySelector("#preset-buttons");
 
 function seatsFor(ids) {
   return parties
@@ -61,7 +190,20 @@ function seatsFor(ids) {
 function sortedParties(inGovernment) {
   return parties
     .filter((party) => (inGovernment ? state.government.has(party.id) : !state.government.has(party.id)))
-    .sort((a, b) => b.seats - a.seats || a.name.localeCompare(b.name));
+    .sort((a, b) => a.lrScore - b.lrScore || b.seats - a.seats || a.name.localeCompare(b.name));
+}
+
+function lrLabel(score) {
+  if (score <= 3) {
+    return "left";
+  }
+  if (score < 6) {
+    return "center-left";
+  }
+  if (score < 7.5) {
+    return "center-right";
+  }
+  return "right";
 }
 
 function renderPartyList(target, inGovernment) {
@@ -93,6 +235,7 @@ function renderPartyList(target, inGovernment) {
         <span class="party-seats">${party.seats} seats</span>
       </div>
       <div class="party-meta">${party.leader}</div>
+      <div class="party-ideology">L/R: ${party.lrScore.toFixed(1)} (${lrLabel(party.lrScore)})</div>
     `;
 
     li.appendChild(button);
@@ -172,6 +315,25 @@ function renderLikelyCommentary() {
   }
 }
 
+function renderPresetButtons() {
+  if (!presetButtons) {
+    return;
+  }
+
+  presetButtons.innerHTML = "";
+  for (const preset of presetCoalitions) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "preset-btn";
+    button.textContent = preset.label;
+    button.addEventListener("click", () => {
+      state.government = new Set(preset.partyIds);
+      render();
+    });
+    presetButtons.appendChild(button);
+  }
+}
+
 function render() {
   const governmentSeats = seatsFor(state.government);
   const oppositionSeats = TOTAL_SEATS - governmentSeats;
@@ -228,4 +390,5 @@ function setupZoneDnD(zoneElement) {
 
 setupZoneDnD(governmentZone);
 setupZoneDnD(oppositionZone);
+renderPresetButtons();
 render();

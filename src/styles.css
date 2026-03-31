@@ -54,6 +54,46 @@ body {
   align-items: center;
 }
 
+.presets {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.presets h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+}
+
+.preset-buttons {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.preset-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.preset-btn:hover {
+  background: #f3f6ff;
+}
+
+.preset-btn:focus-visible {
+  outline: 3px solid #a7baf2;
+  outline-offset: 1px;
+}
+
 .seat-count,
 .majority-message {
   margin: 0;
