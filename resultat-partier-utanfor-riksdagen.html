@@ -223,6 +223,66 @@
   }
   .risk-chip b { font-weight: 600; }
 
+  /* ---------- Fun facts ---------- */
+  .funfacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .funfact {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .funfact .n {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--accent-ink);
+  }
+  .funfact .lbl {
+    font-size: 0.89rem;
+    color: var(--ink);
+    max-width: 44ch;
+  }
+  .funfact-list {
+    list-style: none;
+    margin: 6px 0 0;
+    padding: 12px 0 0;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .funfact-list li {
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .funfact-list li b {
+    color: var(--ink);
+    font-weight: 600;
+    flex: 0 0 auto;
+  }
+  .funfact-list li span {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    text-align: right;
+  }
+  .funfact-more {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    margin-top: 2px;
+  }
+
   /* ---------- Chart ---------- */
   .chart-rows {
     display: flex;
@@ -406,6 +466,23 @@
     <ul class="risk-list" id="risk-list"></ul>
   </section>
 
+  <section aria-labelledby="funfacts-h">
+    <h2 id="funfacts-h">Två kuriosa</h2>
+    <p class="section-note">Samma 171 träffar, sedda från två andra håll.</p>
+    <div class="funfacts">
+      <div class="funfact">
+        <span class="n" id="ff-multi-n">–</span>
+        <span class="lbl">kommuner har mer än ett parti utanför Riksdagen över 2&nbsp;% – där delar flera småpartier på samma väljare.</span>
+        <ul class="funfact-list" id="ff-multi-list"></ul>
+        <p class="funfact-more" id="ff-multi-more" hidden></p>
+      </div>
+      <div class="funfact">
+        <span class="n" id="ff-votes-n">–</span>
+        <span class="lbl">röster gick sammanlagt till de <span id="ff-votes-partier">–</span> partierna på den här listan, över hela landet.</span>
+      </div>
+    </div>
+  </section>
+
   <section aria-labelledby="chart-h">
     <h2 id="chart-h">Störst lokalt stöd</h2>
     <p class="section-note">De 15 parti–kommun-kombinationerna med högst röstandel i sammanställningen.</p>
@@ -488,6 +565,42 @@
   document.getElementById("foot-riksdagspartier").textContent = meta.riksdagspartier.join(", ");
   document.getElementById("foot-tröskel").textContent = sv1(meta.minRostandelProcent);
   document.getElementById("foot-tid").textContent = genDate.toLocaleString("sv-SE");
+
+  // ---- Fun facts ----
+  var byKommun = {};
+  resultat.forEach(function (r) {
+    if (!byKommun[r.kommunkod]) byKommun[r.kommunkod] = { kommun: r.kommun, items: [] };
+    byKommun[r.kommunkod].items.push(r);
+  });
+  var multiKommuner = Object.keys(byKommun)
+    .map(function (k) { return byKommun[k]; })
+    .filter(function (g) { return g.items.length > 1; })
+    .sort(function (a, b) {
+      return b.items.length - a.items.length || a.kommun.localeCompare(b.kommun, "sv");
+    });
+
+  document.getElementById("ff-multi-n").textContent = multiKommuner.length;
+  var multiList = document.getElementById("ff-multi-list");
+  var SHOWN = 6;
+  multiKommuner.slice(0, SHOWN).forEach(function (g) {
+    var li = document.createElement("li");
+    var partier = g.items
+      .slice()
+      .sort(function (a, b) { return b.rostandelProcent - a.rostandelProcent; })
+      .map(function (r) { return r.parti; })
+      .join(" · ");
+    li.innerHTML = "<b>" + g.kommun + "</b><span>" + g.items.length + " st: " + partier + "</span>";
+    multiList.appendChild(li);
+  });
+  if (multiKommuner.length > SHOWN) {
+    var moreEl = document.getElementById("ff-multi-more");
+    moreEl.hidden = false;
+    moreEl.textContent = "+ " + (multiKommuner.length - SHOWN) + " kommuner till med två träffar vardera.";
+  }
+
+  var totalRoster = resultat.reduce(function (sum, r) { return sum + r.antalRoster; }, 0);
+  document.getElementById("ff-votes-n").textContent = svInt(totalRoster);
+  document.getElementById("ff-votes-partier").textContent = meta.antalUnikaPartier;
 
   // ---- Ranked bar chart (top 15) ----
   var top = resultat.slice(0, 15);
