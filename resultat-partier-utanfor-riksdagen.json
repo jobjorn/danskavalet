@@ -1,5 +1,5 @@
 {
-  "genererad": "2026-09-15T08:53:52.719Z",
+  "genererad": "2026-09-15T10:00:45.036Z",
   "antalKommunerIIndex": 290,
   "antalKommunerMedSlutligRakning": 0,
   "slutligKomplettForAllaKommuner": false,
@@ -1514,6 +1514,7 @@
       "kommunkod": "1783",
       "rostandelProcent": 41.9,
       "antalRoster": 2761,
+      "forandringProcentenheter": 0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1523,6 +1524,7 @@
       "kommunkod": "2425",
       "rostandelProcent": 36.8,
       "antalRoster": 403,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1532,6 +1534,7 @@
       "kommunkod": "1471",
       "rostandelProcent": 35,
       "antalRoster": 2676,
+      "forandringProcentenheter": 20.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1541,6 +1544,7 @@
       "kommunkod": "2506",
       "rostandelProcent": 33.4,
       "antalRoster": 522,
+      "forandringProcentenheter": 4.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1550,6 +1554,7 @@
       "kommunkod": "1275",
       "rostandelProcent": 33,
       "antalRoster": 1201,
+      "forandringProcentenheter": 11.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1559,6 +1564,7 @@
       "kommunkod": "0330",
       "rostandelProcent": 32.1,
       "antalRoster": 4195,
+      "forandringProcentenheter": 4.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1568,6 +1574,7 @@
       "kommunkod": "1863",
       "rostandelProcent": 28.4,
       "antalRoster": 1064,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1577,6 +1584,7 @@
       "kommunkod": "2260",
       "rostandelProcent": 28.4,
       "antalRoster": 1500,
+      "forandringProcentenheter": 11.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1586,6 +1594,7 @@
       "kommunkod": "2282",
       "rostandelProcent": 25,
       "antalRoster": 2697,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1595,6 +1604,7 @@
       "kommunkod": "1444",
       "rostandelProcent": 24.4,
       "antalRoster": 758,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1604,6 +1614,7 @@
       "kommunkod": "0662",
       "rostandelProcent": 24.1,
       "antalRoster": 4078,
+      "forandringProcentenheter": 5.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1613,6 +1624,7 @@
       "kommunkod": "2418",
       "rostandelProcent": 22.2,
       "antalRoster": 308,
+      "forandringProcentenheter": 6.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1622,6 +1634,7 @@
       "kommunkod": "1494",
       "rostandelProcent": 22,
       "antalRoster": 5602,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1631,6 +1644,7 @@
       "kommunkod": "2518",
       "rostandelProcent": 21.3,
       "antalRoster": 442,
+      "forandringProcentenheter": 5.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1640,6 +1654,7 @@
       "kommunkod": "0584",
       "rostandelProcent": 20.5,
       "antalRoster": 919,
+      "forandringProcentenheter": -2.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1649,6 +1664,7 @@
       "kommunkod": "2062",
       "rostandelProcent": 20.5,
       "antalRoster": 2686,
+      "forandringProcentenheter": 2.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1658,6 +1674,7 @@
       "kommunkod": "1962",
       "rostandelProcent": 20.3,
       "antalRoster": 640,
+      "forandringProcentenheter": -3.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1667,6 +1684,7 @@
       "kommunkod": "1276",
       "rostandelProcent": 19.8,
       "antalRoster": 1996,
+      "forandringProcentenheter": 15.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1676,6 +1694,7 @@
       "kommunkod": "2029",
       "rostandelProcent": 19.8,
       "antalRoster": 2113,
+      "forandringProcentenheter": 0.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1685,6 +1704,7 @@
       "kommunkod": "2321",
       "rostandelProcent": 19.8,
       "antalRoster": 1492,
+      "forandringProcentenheter": -0.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1694,6 +1714,7 @@
       "kommunkod": "0187",
       "rostandelProcent": 19,
       "antalRoster": 1434,
+      "forandringProcentenheter": -0.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1703,6 +1724,7 @@
       "kommunkod": "1491",
       "rostandelProcent": 18.4,
       "antalRoster": 2654,
+      "forandringProcentenheter": 2.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1712,6 +1734,7 @@
       "kommunkod": "1880",
       "rostandelProcent": 17.2,
       "antalRoster": 17891,
+      "forandringProcentenheter": 9.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1721,6 +1744,7 @@
       "kommunkod": "2305",
       "rostandelProcent": 15.4,
       "antalRoster": 451,
+      "forandringProcentenheter": 9.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1730,6 +1754,7 @@
       "kommunkod": "2183",
       "rostandelProcent": 15.2,
       "antalRoster": 2472,
+      "forandringProcentenheter": 5.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1739,6 +1764,7 @@
       "kommunkod": "0186",
       "rostandelProcent": 14.9,
       "antalRoster": 4672,
+      "forandringProcentenheter": -2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1748,6 +1774,7 @@
       "kommunkod": "1907",
       "rostandelProcent": 14.4,
       "antalRoster": 814,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1757,6 +1784,7 @@
       "kommunkod": "1737",
       "rostandelProcent": 14.1,
       "antalRoster": 878,
+      "forandringProcentenheter": 2.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1766,6 +1794,7 @@
       "kommunkod": "1261",
       "rostandelProcent": 14,
       "antalRoster": 2963,
+      "forandringProcentenheter": 8.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1775,6 +1804,7 @@
       "kommunkod": "0360",
       "rostandelProcent": 13.7,
       "antalRoster": 1825,
+      "forandringProcentenheter": 9.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1784,6 +1814,7 @@
       "kommunkod": "1430",
       "rostandelProcent": 13.4,
       "antalRoster": 790,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1793,6 +1824,7 @@
       "kommunkod": "1381",
       "rostandelProcent": 13.3,
       "antalRoster": 2241,
+      "forandringProcentenheter": 4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1802,6 +1834,7 @@
       "kommunkod": "1785",
       "rostandelProcent": 13.3,
       "antalRoster": 1110,
+      "forandringProcentenheter": 7.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1811,6 +1844,7 @@
       "kommunkod": "2510",
       "rostandelProcent": 13.2,
       "antalRoster": 362,
+      "forandringProcentenheter": -6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1820,6 +1854,7 @@
       "kommunkod": "0685",
       "rostandelProcent": 13.1,
       "antalRoster": 2213,
+      "forandringProcentenheter": -9.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1829,6 +1864,7 @@
       "kommunkod": "1415",
       "rostandelProcent": 13,
       "antalRoster": 2191,
+      "forandringProcentenheter": 6.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1838,6 +1874,7 @@
       "kommunkod": "1262",
       "rostandelProcent": 12.6,
       "antalRoster": 2011,
+      "forandringProcentenheter": 1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1847,6 +1884,7 @@
       "kommunkod": "2518",
       "rostandelProcent": 12.5,
       "antalRoster": 260,
+      "forandringProcentenheter": -2.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1856,6 +1894,7 @@
       "kommunkod": "0182",
       "rostandelProcent": 12.3,
       "antalRoster": 8784,
+      "forandringProcentenheter": 1.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1865,6 +1904,7 @@
       "kommunkod": "1421",
       "rostandelProcent": 12.1,
       "antalRoster": 1213,
+      "forandringProcentenheter": 6.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1874,6 +1914,7 @@
       "kommunkod": "0140",
       "rostandelProcent": 12,
       "antalRoster": 900,
+      "forandringProcentenheter": -4.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1883,6 +1924,7 @@
       "kommunkod": "1496",
       "rostandelProcent": 12,
       "antalRoster": 4109,
+      "forandringProcentenheter": -2.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1892,6 +1934,7 @@
       "kommunkod": "1278",
       "rostandelProcent": 11.7,
       "antalRoster": 1256,
+      "forandringProcentenheter": 0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1901,6 +1944,7 @@
       "kommunkod": "1427",
       "rostandelProcent": 11.7,
       "antalRoster": 675,
+      "forandringProcentenheter": -5.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1910,6 +1954,7 @@
       "kommunkod": "2161",
       "rostandelProcent": 11.7,
       "antalRoster": 1312,
+      "forandringProcentenheter": 2.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1919,6 +1964,7 @@
       "kommunkod": "0114",
       "rostandelProcent": 11.3,
       "antalRoster": 3040,
+      "forandringProcentenheter": -1.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1928,6 +1974,7 @@
       "kommunkod": "0305",
       "rostandelProcent": 11.3,
       "antalRoster": 1503,
+      "forandringProcentenheter": 3.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1937,6 +1984,7 @@
       "kommunkod": "0305",
       "rostandelProcent": 11.2,
       "antalRoster": 1497,
+      "forandringProcentenheter": 4.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1946,6 +1994,7 @@
       "kommunkod": "1465",
       "rostandelProcent": 10.9,
       "antalRoster": 665,
+      "forandringProcentenheter": 0.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1955,6 +2004,7 @@
       "kommunkod": "1884",
       "rostandelProcent": 10.9,
       "antalRoster": 669,
+      "forandringProcentenheter": -3.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1964,6 +2014,7 @@
       "kommunkod": "1983",
       "rostandelProcent": 10.5,
       "antalRoster": 1434,
+      "forandringProcentenheter": 7.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1973,6 +2024,7 @@
       "kommunkod": "1470",
       "rostandelProcent": 10.4,
       "antalRoster": 1029,
+      "forandringProcentenheter": 0.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1982,6 +2034,7 @@
       "kommunkod": "0127",
       "rostandelProcent": 10.3,
       "antalRoster": 4682,
+      "forandringProcentenheter": -1.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -1991,6 +2044,7 @@
       "kommunkod": "1419",
       "rostandelProcent": 10.2,
       "antalRoster": 1112,
+      "forandringProcentenheter": -2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2000,6 +2054,7 @@
       "kommunkod": "2463",
       "rostandelProcent": 10.2,
       "antalRoster": 137,
+      "forandringProcentenheter": -9.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2009,6 +2064,7 @@
       "kommunkod": "0582",
       "rostandelProcent": 10.1,
       "antalRoster": 972,
+      "forandringProcentenheter": 5.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2018,6 +2074,7 @@
       "kommunkod": "0580",
       "rostandelProcent": 10,
       "antalRoster": 10828,
+      "forandringProcentenheter": 1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2027,6 +2084,7 @@
       "kommunkod": "1484",
       "rostandelProcent": 9.9,
       "antalRoster": 901,
+      "forandringProcentenheter": -5.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2036,6 +2094,7 @@
       "kommunkod": "1784",
       "rostandelProcent": 9.9,
       "antalRoster": 1458,
+      "forandringProcentenheter": 2.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2045,6 +2104,7 @@
       "kommunkod": "2026",
       "rostandelProcent": 9.9,
       "antalRoster": 638,
+      "forandringProcentenheter": 1.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2054,6 +2114,7 @@
       "kommunkod": "2262",
       "rostandelProcent": 9.8,
       "antalRoster": 1103,
+      "forandringProcentenheter": -1.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2063,6 +2124,7 @@
       "kommunkod": "1885",
       "rostandelProcent": 9.6,
       "antalRoster": 1330,
+      "forandringProcentenheter": 5.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2072,6 +2134,7 @@
       "kommunkod": "2262",
       "rostandelProcent": 9.6,
       "antalRoster": 1071,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2081,6 +2144,7 @@
       "kommunkod": "2039",
       "rostandelProcent": 9.2,
       "antalRoster": 368,
+      "forandringProcentenheter": 3.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2090,6 +2154,7 @@
       "kommunkod": "1081",
       "rostandelProcent": 9.1,
       "antalRoster": 1645,
+      "forandringProcentenheter": 6.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2099,6 +2164,7 @@
       "kommunkod": "0381",
       "rostandelProcent": 8.9,
       "antalRoster": 2696,
+      "forandringProcentenheter": -2.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2108,6 +2174,7 @@
       "kommunkod": "1272",
       "rostandelProcent": 8.9,
       "antalRoster": 679,
+      "forandringProcentenheter": 0.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2117,6 +2184,7 @@
       "kommunkod": "2309",
       "rostandelProcent": 8.9,
       "antalRoster": 859,
+      "forandringProcentenheter": 5.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2126,6 +2194,7 @@
       "kommunkod": "1981",
       "rostandelProcent": 8.7,
       "antalRoster": 1229,
+      "forandringProcentenheter": -1.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2135,6 +2204,7 @@
       "kommunkod": "1287",
       "rostandelProcent": 8.6,
       "antalRoster": 2481,
+      "forandringProcentenheter": -4.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2144,6 +2214,7 @@
       "kommunkod": "2083",
       "rostandelProcent": 8.5,
       "antalRoster": 752,
+      "forandringProcentenheter": -2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2153,6 +2224,7 @@
       "kommunkod": "2283",
       "rostandelProcent": 8.4,
       "antalRoster": 935,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2162,6 +2234,7 @@
       "kommunkod": "1730",
       "rostandelProcent": 8.2,
       "antalRoster": 313,
+      "forandringProcentenheter": 0.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2171,6 +2244,7 @@
       "kommunkod": "0764",
       "rostandelProcent": 8.1,
       "antalRoster": 967,
+      "forandringProcentenheter": -2.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2180,6 +2254,7 @@
       "kommunkod": "0125",
       "rostandelProcent": 8,
       "antalRoster": 1442,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2189,6 +2264,7 @@
       "kommunkod": "1277",
       "rostandelProcent": 8,
       "antalRoster": 702,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2198,6 +2274,7 @@
       "kommunkod": "1293",
       "rostandelProcent": 8,
       "antalRoster": 2563,
+      "forandringProcentenheter": 2.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2207,6 +2284,7 @@
       "kommunkod": "2284",
       "rostandelProcent": 7.8,
       "antalRoster": 2770,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2216,6 +2294,7 @@
       "kommunkod": "0128",
       "rostandelProcent": 7.7,
       "antalRoster": 714,
+      "forandringProcentenheter": -1.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2225,6 +2304,7 @@
       "kommunkod": "1292",
       "rostandelProcent": 7.7,
       "antalRoster": 2233,
+      "forandringProcentenheter": 4.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2234,6 +2314,7 @@
       "kommunkod": "1480",
       "rostandelProcent": 7.7,
       "antalRoster": 28221,
+      "forandringProcentenheter": 1.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2243,6 +2324,7 @@
       "kommunkod": "2283",
       "rostandelProcent": 7.7,
       "antalRoster": 856,
+      "forandringProcentenheter": -2.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2252,6 +2334,7 @@
       "kommunkod": "2582",
       "rostandelProcent": 7.7,
       "antalRoster": 1339,
+      "forandringProcentenheter": 1.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2261,6 +2344,7 @@
       "kommunkod": "1884",
       "rostandelProcent": 7.6,
       "antalRoster": 465,
+      "forandringProcentenheter": -1.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2270,6 +2354,7 @@
       "kommunkod": "2303",
       "rostandelProcent": 7.6,
       "antalRoster": 213,
+      "forandringProcentenheter": -1.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2279,6 +2364,7 @@
       "kommunkod": "1485",
       "rostandelProcent": 7.5,
       "antalRoster": 2552,
+      "forandringProcentenheter": -2.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2288,6 +2374,7 @@
       "kommunkod": "2085",
       "rostandelProcent": 7.5,
       "antalRoster": 1177,
+      "forandringProcentenheter": 4.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2297,6 +2384,7 @@
       "kommunkod": "2023",
       "rostandelProcent": 7.3,
       "antalRoster": 459,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2306,6 +2394,7 @@
       "kommunkod": "2132",
       "rostandelProcent": 7.3,
       "antalRoster": 409,
+      "forandringProcentenheter": -1.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2315,6 +2404,7 @@
       "kommunkod": "2583",
       "rostandelProcent": 7.3,
       "antalRoster": 284,
+      "forandringProcentenheter": -0.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2324,6 +2414,7 @@
       "kommunkod": "1461",
       "rostandelProcent": 7.2,
       "antalRoster": 397,
+      "forandringProcentenheter": 2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2333,6 +2424,7 @@
       "kommunkod": "0123",
       "rostandelProcent": 7,
       "antalRoster": 3450,
+      "forandringProcentenheter": 3.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2342,6 +2434,7 @@
       "kommunkod": "0513",
       "rostandelProcent": 6.9,
       "antalRoster": 407,
+      "forandringProcentenheter": -1.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2351,6 +2444,7 @@
       "kommunkod": "1487",
       "rostandelProcent": 6.9,
       "antalRoster": 1708,
+      "forandringProcentenheter": 1.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2360,6 +2454,7 @@
       "kommunkod": "0885",
       "rostandelProcent": 6.7,
       "antalRoster": 492,
+      "forandringProcentenheter": -0.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2369,6 +2464,7 @@
       "kommunkod": "1380",
       "rostandelProcent": 6.7,
       "antalRoster": 4474,
+      "forandringProcentenheter": 0.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2378,6 +2474,7 @@
       "kommunkod": "0192",
       "rostandelProcent": 6.6,
       "antalRoster": 1163,
+      "forandringProcentenheter": 0.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2387,6 +2484,7 @@
       "kommunkod": "0563",
       "rostandelProcent": 6.6,
       "antalRoster": 325,
+      "forandringProcentenheter": -6.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2396,6 +2494,7 @@
       "kommunkod": "2361",
       "rostandelProcent": 6.6,
       "antalRoster": 408,
+      "forandringProcentenheter": -1.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2405,6 +2504,7 @@
       "kommunkod": "1263",
       "rostandelProcent": 6.4,
       "antalRoster": 925,
+      "forandringProcentenheter": 0.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2414,6 +2514,7 @@
       "kommunkod": "1766",
       "rostandelProcent": 6.3,
       "antalRoster": 502,
+      "forandringProcentenheter": -1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2423,6 +2524,7 @@
       "kommunkod": "2280",
       "rostandelProcent": 6.3,
       "antalRoster": 967,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2432,6 +2534,7 @@
       "kommunkod": "0117",
       "rostandelProcent": 6.1,
       "antalRoster": 1869,
+      "forandringProcentenheter": -0.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2441,6 +2544,7 @@
       "kommunkod": "2260",
       "rostandelProcent": 6,
       "antalRoster": 317,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2450,6 +2554,7 @@
       "kommunkod": "1443",
       "rostandelProcent": 5.9,
       "antalRoster": 352,
+      "forandringProcentenheter": -5.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2459,6 +2564,7 @@
       "kommunkod": "1281",
       "rostandelProcent": 5.7,
       "antalRoster": 4894,
+      "forandringProcentenheter": -0.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2468,6 +2574,7 @@
       "kommunkod": "0428",
       "rostandelProcent": 5.5,
       "antalRoster": 301,
+      "forandringProcentenheter": -0.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2477,6 +2584,7 @@
       "kommunkod": "1498",
       "rostandelProcent": 5.5,
       "antalRoster": 399,
+      "forandringProcentenheter": -10,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2486,6 +2594,7 @@
       "kommunkod": "2421",
       "rostandelProcent": 5.4,
       "antalRoster": 164,
+      "forandringProcentenheter": 1.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2495,6 +2604,7 @@
       "kommunkod": "2584",
       "rostandelProcent": 5.3,
       "antalRoster": 690,
+      "forandringProcentenheter": 0.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2504,6 +2614,7 @@
       "kommunkod": "0486",
       "rostandelProcent": 5,
       "antalRoster": 1164,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2513,6 +2624,7 @@
       "kommunkod": "0642",
       "rostandelProcent": 5,
       "antalRoster": 225,
+      "forandringProcentenheter": 4.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2522,6 +2634,7 @@
       "kommunkod": "0682",
       "rostandelProcent": 5,
       "antalRoster": 961,
+      "forandringProcentenheter": 0.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2531,6 +2644,7 @@
       "kommunkod": "1401",
       "rostandelProcent": 5,
       "antalRoster": 1217,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2540,6 +2654,7 @@
       "kommunkod": "0126",
       "rostandelProcent": 4.9,
       "antalRoster": 3026,
+      "forandringProcentenheter": -0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2549,6 +2664,7 @@
       "kommunkod": "2510",
       "rostandelProcent": 4.9,
       "antalRoster": 136,
+      "forandringProcentenheter": -2.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2558,6 +2674,7 @@
       "kommunkod": "0127",
       "rostandelProcent": 4.7,
       "antalRoster": 2141,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2567,6 +2684,7 @@
       "kommunkod": "0643",
       "rostandelProcent": 4.7,
       "antalRoster": 367,
+      "forandringProcentenheter": 0.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2576,6 +2694,7 @@
       "kommunkod": "1460",
       "rostandelProcent": 4.6,
       "antalRoster": 222,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2585,6 +2704,7 @@
       "kommunkod": "1484",
       "rostandelProcent": 4.6,
       "antalRoster": 418,
+      "forandringProcentenheter": -0.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2594,6 +2714,7 @@
       "kommunkod": "1466",
       "rostandelProcent": 4.5,
       "antalRoster": 252,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2603,6 +2724,7 @@
       "kommunkod": "1482",
       "rostandelProcent": 4.5,
       "antalRoster": 1412,
+      "forandringProcentenheter": -2.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2612,6 +2734,7 @@
       "kommunkod": "2584",
       "rostandelProcent": 4.5,
       "antalRoster": 583,
+      "forandringProcentenheter": -0.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2621,6 +2744,7 @@
       "kommunkod": "0319",
       "rostandelProcent": 4.4,
       "antalRoster": 260,
+      "forandringProcentenheter": -1.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2630,6 +2754,7 @@
       "kommunkod": "2582",
       "rostandelProcent": 4.4,
       "antalRoster": 765,
+      "forandringProcentenheter": 2.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2639,6 +2764,7 @@
       "kommunkod": "1082",
       "rostandelProcent": 4.3,
       "antalRoster": 870,
+      "forandringProcentenheter": 1.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2648,6 +2774,7 @@
       "kommunkod": "1487",
       "rostandelProcent": 4.3,
       "antalRoster": 1063,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2657,6 +2784,7 @@
       "kommunkod": "0187",
       "rostandelProcent": 4.2,
       "antalRoster": 319,
+      "forandringProcentenheter": -0.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2666,6 +2794,7 @@
       "kommunkod": "0181",
       "rostandelProcent": 4.1,
       "antalRoster": 2126,
+      "forandringProcentenheter": 0,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2675,6 +2804,7 @@
       "kommunkod": "1882",
       "rostandelProcent": 4.1,
       "antalRoster": 300,
+      "forandringProcentenheter": 1.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2684,6 +2814,7 @@
       "kommunkod": "0882",
       "rostandelProcent": 3.9,
       "antalRoster": 671,
+      "forandringProcentenheter": -0.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2693,6 +2824,7 @@
       "kommunkod": "1275",
       "rostandelProcent": 3.9,
       "antalRoster": 143,
+      "forandringProcentenheter": -9.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2702,6 +2834,7 @@
       "kommunkod": "1280",
       "rostandelProcent": 3.9,
       "antalRoster": 8375,
+      "forandringProcentenheter": 3.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2711,6 +2844,7 @@
       "kommunkod": "2281",
       "rostandelProcent": 3.9,
       "antalRoster": 2511,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2720,6 +2854,7 @@
       "kommunkod": "0120",
       "rostandelProcent": 3.8,
       "antalRoster": 1116,
+      "forandringProcentenheter": 1.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2729,6 +2864,7 @@
       "kommunkod": "1264",
       "rostandelProcent": 3.6,
       "antalRoster": 373,
+      "forandringProcentenheter": 0.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2738,6 +2874,7 @@
       "kommunkod": "1383",
       "rostandelProcent": 3.6,
       "antalRoster": 1491,
+      "forandringProcentenheter": 0.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2747,6 +2884,7 @@
       "kommunkod": "2581",
       "rostandelProcent": 3.6,
       "antalRoster": 1020,
+      "forandringProcentenheter": 1.5,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2756,6 +2894,7 @@
       "kommunkod": "1263",
       "rostandelProcent": 3.5,
       "antalRoster": 507,
+      "forandringProcentenheter": 0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2765,6 +2904,7 @@
       "kommunkod": "1384",
       "rostandelProcent": 3.5,
       "antalRoster": 1840,
+      "forandringProcentenheter": -0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2774,6 +2914,7 @@
       "kommunkod": "2514",
       "rostandelProcent": 3.5,
       "antalRoster": 308,
+      "forandringProcentenheter": 1.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2783,6 +2924,7 @@
       "kommunkod": "2521",
       "rostandelProcent": 3.5,
       "antalRoster": 115,
+      "forandringProcentenheter": 0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2792,6 +2934,7 @@
       "kommunkod": "1083",
       "rostandelProcent": 3.4,
       "antalRoster": 373,
+      "forandringProcentenheter": 1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2801,6 +2944,7 @@
       "kommunkod": "1381",
       "rostandelProcent": 3.4,
       "antalRoster": 565,
+      "forandringProcentenheter": 0.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2810,6 +2954,7 @@
       "kommunkod": "1383",
       "rostandelProcent": 3.4,
       "antalRoster": 1407,
+      "forandringProcentenheter": 0.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2819,6 +2964,7 @@
       "kommunkod": "1440",
       "rostandelProcent": 3.3,
       "antalRoster": 647,
+      "forandringProcentenheter": -1.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2828,6 +2974,7 @@
       "kommunkod": "2480",
       "rostandelProcent": 3.3,
       "antalRoster": 2884,
+      "forandringProcentenheter": -0.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2837,6 +2984,7 @@
       "kommunkod": "0382",
       "rostandelProcent": 3.2,
       "antalRoster": 464,
+      "forandringProcentenheter": -2.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2846,6 +2994,7 @@
       "kommunkod": "0665",
       "rostandelProcent": 3.2,
       "antalRoster": 295,
+      "forandringProcentenheter": -1.7,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2855,6 +3004,7 @@
       "kommunkod": "1266",
       "rostandelProcent": 3.2,
       "antalRoster": 309,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2864,6 +3014,7 @@
       "kommunkod": "2462",
       "rostandelProcent": 3.2,
       "antalRoster": 119,
+      "forandringProcentenheter": -3.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2873,6 +3024,7 @@
       "kommunkod": "1315",
       "rostandelProcent": 3,
       "antalRoster": 166,
+      "forandringProcentenheter": -0.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2882,6 +3034,7 @@
       "kommunkod": "2283",
       "rostandelProcent": 3,
       "antalRoster": 334,
+      "forandringProcentenheter": -0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2891,6 +3044,7 @@
       "kommunkod": "0127",
       "rostandelProcent": 2.8,
       "antalRoster": 1297,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2900,6 +3054,7 @@
       "kommunkod": "0561",
       "rostandelProcent": 2.8,
       "antalRoster": 186,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2909,6 +3064,7 @@
       "kommunkod": "1761",
       "rostandelProcent": 2.8,
       "antalRoster": 289,
+      "forandringProcentenheter": 0.8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2918,6 +3074,7 @@
       "kommunkod": "2023",
       "rostandelProcent": 2.8,
       "antalRoster": 173,
+      "forandringProcentenheter": -8.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2927,6 +3084,7 @@
       "kommunkod": "2463",
       "rostandelProcent": 2.7,
       "antalRoster": 36,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2936,6 +3094,7 @@
       "kommunkod": "2580",
       "rostandelProcent": 2.7,
       "antalRoster": 1391,
+      "forandringProcentenheter": -0.4,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2945,6 +3104,7 @@
       "kommunkod": "0662",
       "rostandelProcent": 2.6,
       "antalRoster": 443,
+      "forandringProcentenheter": -8,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2954,6 +3114,7 @@
       "kommunkod": "1291",
       "rostandelProcent": 2.6,
       "antalRoster": 327,
+      "forandringProcentenheter": 0.2,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2963,6 +3124,7 @@
       "kommunkod": "1814",
       "rostandelProcent": 2.6,
       "antalRoster": 135,
+      "forandringProcentenheter": -2.6,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2972,6 +3134,7 @@
       "kommunkod": "0192",
       "rostandelProcent": 2.5,
       "antalRoster": 434,
+      "forandringProcentenheter": 0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2981,6 +3144,7 @@
       "kommunkod": "0380",
       "rostandelProcent": 2.5,
       "antalRoster": 3829,
+      "forandringProcentenheter": -0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2990,6 +3154,7 @@
       "kommunkod": "0643",
       "rostandelProcent": 2.5,
       "antalRoster": 194,
+      "forandringProcentenheter": null,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -2999,6 +3164,7 @@
       "kommunkod": "1380",
       "rostandelProcent": 2.5,
       "antalRoster": 1649,
+      "forandringProcentenheter": -0.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -3008,6 +3174,7 @@
       "kommunkod": "0662",
       "rostandelProcent": 2.3,
       "antalRoster": 393,
+      "forandringProcentenheter": 2.3,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -3017,6 +3184,7 @@
       "kommunkod": "1737",
       "rostandelProcent": 2.3,
       "antalRoster": 141,
+      "forandringProcentenheter": 0,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -3026,6 +3194,7 @@
       "kommunkod": "1267",
       "rostandelProcent": 2.2,
       "antalRoster": 238,
+      "forandringProcentenheter": -2.9,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -3035,6 +3204,7 @@
       "kommunkod": "2523",
       "rostandelProcent": 2.2,
       "antalRoster": 216,
+      "forandringProcentenheter": 0.1,
       "rakningstillfalle": "preliminär"
     },
     {
@@ -3044,6 +3214,7 @@
       "kommunkod": "0126",
       "rostandelProcent": 2,
       "antalRoster": 1254,
+      "forandringProcentenheter": -0.5,
       "rakningstillfalle": "preliminär"
     }
   ]

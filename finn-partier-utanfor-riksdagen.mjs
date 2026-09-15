@@ -101,6 +101,11 @@ function extractPartiRader(json) {
     partinamn: p.partibeteckning,
     antalRoster: p.antalRoster,
     andelRoster: p.andelRoster,
+    // Valmyndigheten levererar redan jämförelsen mot valet 2022 per parti;
+    // andelRosterForegaendeVal saknas (null/undefined) om partiet inte
+    // ställde upp i kommunen 2022 — då finns ingen förändring att visa.
+    forandringAndelRoster: p.forandringAndelRoster ?? null,
+    andelRosterForegaendeVal: p.andelRosterForegaendeVal ?? null,
   }));
 }
 
@@ -183,6 +188,7 @@ async function main() {
           kommunkod: info.kommunkod,
           rostandelProcent: p.andelRoster,
           antalRoster: p.antalRoster,
+          forandringProcentenheter: p.andelRosterForegaendeVal == null ? null : p.forandringAndelRoster,
           rakningstillfalle: info.rakningstillfalle,
         });
       }

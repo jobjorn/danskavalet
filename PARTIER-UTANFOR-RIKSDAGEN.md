@@ -11,7 +11,10 @@ Körs med: `npm install && node finn-partier-utanfor-riksdagen.mjs`
 3. Laddar ner och packar upp varje zip, läser
    `Val_2026_<typ>_mandatfordelning_<kod>_KF.json`.
 4. Plockar ut partiandelar från
-   `valomrade.rostfordelning.rosterPaverkaMandat.partiRoster[]`.
+   `valomrade.rostfordelning.rosterPaverkaMandat.partiRoster[]`, inklusive
+   Valmyndighetens egen jämförelse mot 2022 (`forandringAndelRoster`, i
+   procentenheter). Saknas `andelRosterForegaendeVal` helt räknas partiet
+   som nytt i kommunen och får ingen förändringssiffra.
 5. Filtrerar bort riksdagspartierna (S, M, SD, C, V, KD, L, MP) och allt
    under 2 %.
 6. Skriver `resultat-partier-utanfor-riksdagen.json` (med varningar) och
