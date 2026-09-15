@@ -1,0 +1,3050 @@
+{
+  "genererad": "2026-09-15T08:53:52.719Z",
+  "antalKommunerIIndex": 290,
+  "antalKommunerMedSlutligRakning": 0,
+  "slutligKomplettForAllaKommuner": false,
+  "riksdagspartierFiltrerade": [
+    "S",
+    "M",
+    "SD",
+    "C",
+    "V",
+    "KD",
+    "L",
+    "MP"
+  ],
+  "minRostandelProcent": 2,
+  "varningar": [
+    {
+      "kommunkod": "0114",
+      "kommun": "Upplands Väsby",
+      "varning": "Endast 28/29 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0115",
+      "kommun": "Vallentuna",
+      "varning": "Endast 17/18 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0117",
+      "kommun": "Österåker",
+      "varning": "Endast 25/26 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0120",
+      "kommun": "Värmdö",
+      "varning": "Endast 30/31 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0123",
+      "kommun": "Järfälla",
+      "varning": "Endast 47/48 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0125",
+      "kommun": "Ekerö",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0126",
+      "kommun": "Huddinge",
+      "varning": "Endast 64/65 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0127",
+      "kommun": "Botkyrka",
+      "varning": "Endast 51/53 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0128",
+      "kommun": "Salem",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0136",
+      "kommun": "Haninge",
+      "varning": "Endast 54/56 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0138",
+      "kommun": "Tyresö",
+      "varning": "Endast 26/27 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0139",
+      "kommun": "Upplands-Bro",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0140",
+      "kommun": "Nykvarn",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0160",
+      "kommun": "Täby",
+      "varning": "Endast 45/47 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0162",
+      "kommun": "Danderyd",
+      "varning": "Endast 20/21 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0163",
+      "kommun": "Sollentuna",
+      "varning": "Endast 46/47 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0180",
+      "kommun": "Stockholm",
+      "varning": "Endast 591/612 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0181",
+      "kommun": "Södertälje",
+      "varning": "Endast 54/55 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0182",
+      "kommun": "Nacka",
+      "varning": "Endast 60/62 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0183",
+      "kommun": "Sundbyberg",
+      "varning": "Endast 33/34 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0184",
+      "kommun": "Solna",
+      "varning": "Endast 46/47 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0186",
+      "kommun": "Lidingö",
+      "varning": "Endast 26/27 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0187",
+      "kommun": "Vaxholm",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0188",
+      "kommun": "Norrtälje",
+      "varning": "Endast 42/43 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0191",
+      "kommun": "Sigtuna",
+      "varning": "Endast 28/29 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0192",
+      "kommun": "Nynäshamn",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0305",
+      "kommun": "Håbo",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0319",
+      "kommun": "Älvkarleby",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0330",
+      "kommun": "Knivsta",
+      "varning": "Endast 12/13 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0331",
+      "kommun": "Heby",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0360",
+      "kommun": "Tierp",
+      "varning": "Endast 14/15 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0380",
+      "kommun": "Uppsala",
+      "varning": "Endast 149/150 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0381",
+      "kommun": "Enköping",
+      "varning": "Endast 24/25 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0382",
+      "kommun": "Östhammar",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0428",
+      "kommun": "Vingåker",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0461",
+      "kommun": "Gnesta",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0480",
+      "kommun": "Nyköping",
+      "varning": "Endast 39/40 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0481",
+      "kommun": "Oxelösund",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0482",
+      "kommun": "Flen",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0482",
+      "kommun": "Flen",
+      "varning": "\"Övriga anmälda partier\" utgör 9.8% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "0483",
+      "kommun": "Katrineholm",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0483",
+      "kommun": "Katrineholm",
+      "varning": "\"Övriga anmälda partier\" utgör 2.7% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "0484",
+      "kommun": "Eskilstuna",
+      "varning": "Endast 61/62 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0484",
+      "kommun": "Eskilstuna",
+      "varning": "\"Övriga anmälda partier\" utgör 2% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "0486",
+      "kommun": "Strängnäs",
+      "varning": "Endast 23/24 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0488",
+      "kommun": "Trosa",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0509",
+      "kommun": "Ödeshög",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0512",
+      "kommun": "Ydre",
+      "varning": "Endast 2/3 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0513",
+      "kommun": "Kinda",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0560",
+      "kommun": "Boxholm",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0561",
+      "kommun": "Åtvidaberg",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0562",
+      "kommun": "Finspång",
+      "varning": "Endast 16/17 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0563",
+      "kommun": "Valdemarsvik",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0580",
+      "kommun": "Linköping",
+      "varning": "Endast 102/105 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0581",
+      "kommun": "Norrköping",
+      "varning": "Endast 86/87 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0582",
+      "kommun": "Söderköping",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0583",
+      "kommun": "Motala",
+      "varning": "Endast 24/25 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0584",
+      "kommun": "Vadstena",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0586",
+      "kommun": "Mjölby",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0604",
+      "kommun": "Aneby",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0617",
+      "kommun": "Gnosjö",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0642",
+      "kommun": "Mullsjö",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0643",
+      "kommun": "Habo",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0662",
+      "kommun": "Gislaved",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0665",
+      "kommun": "Vaggeryd",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0680",
+      "kommun": "Jönköping",
+      "varning": "Endast 82/83 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0682",
+      "kommun": "Nässjö",
+      "varning": "Endast 15/16 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0683",
+      "kommun": "Värnamo",
+      "varning": "Endast 20/21 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0684",
+      "kommun": "Sävsjö",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0685",
+      "kommun": "Vetlanda",
+      "varning": "Endast 14/15 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0686",
+      "kommun": "Eksjö",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0687",
+      "kommun": "Tranås",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0760",
+      "kommun": "Uppvidinge",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0761",
+      "kommun": "Lessebo",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0763",
+      "kommun": "Tingsryd",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0764",
+      "kommun": "Alvesta",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0765",
+      "kommun": "Älmhult",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0767",
+      "kommun": "Markaryd",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0780",
+      "kommun": "Växjö",
+      "varning": "Endast 56/57 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0781",
+      "kommun": "Ljungby",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0821",
+      "kommun": "Högsby",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0834",
+      "kommun": "Torsås",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0840",
+      "kommun": "Mörbylånga",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0860",
+      "kommun": "Hultsfred",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0860",
+      "kommun": "Hultsfred",
+      "varning": "\"Övriga anmälda partier\" utgör 2.9% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "0861",
+      "kommun": "Mönsterås",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0862",
+      "kommun": "Emmaboda",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0880",
+      "kommun": "Kalmar",
+      "varning": "Endast 42/44 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0881",
+      "kommun": "Nybro",
+      "varning": "Endast 14/15 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0881",
+      "kommun": "Nybro",
+      "varning": "\"Övriga anmälda partier\" utgör 5.5% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "0882",
+      "kommun": "Oskarshamn",
+      "varning": "Endast 16/17 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0883",
+      "kommun": "Västervik",
+      "varning": "Endast 23/24 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0884",
+      "kommun": "Vimmerby",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0885",
+      "kommun": "Borgholm",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "0980",
+      "kommun": "Gotland",
+      "varning": "Endast 40/41 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1060",
+      "kommun": "Olofström",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1080",
+      "kommun": "Karlskrona",
+      "varning": "Endast 40/43 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1081",
+      "kommun": "Ronneby",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1082",
+      "kommun": "Karlshamn",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1083",
+      "kommun": "Sölvesborg",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1214",
+      "kommun": "Svalöv",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1230",
+      "kommun": "Staffanstorp",
+      "varning": "Endast 17/18 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1231",
+      "kommun": "Burlöv",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1233",
+      "kommun": "Vellinge",
+      "varning": "Endast 24/25 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1233",
+      "kommun": "Vellinge",
+      "varning": "\"Övriga anmälda partier\" utgör 2.2% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "1256",
+      "kommun": "Östra Göinge",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1257",
+      "kommun": "Örkelljunga",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1260",
+      "kommun": "Bjuv",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1261",
+      "kommun": "Kävlinge",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1262",
+      "kommun": "Lomma",
+      "varning": "Endast 16/17 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1263",
+      "kommun": "Svedala",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1264",
+      "kommun": "Skurup",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1265",
+      "kommun": "Sjöbo",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1266",
+      "kommun": "Hörby",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1267",
+      "kommun": "Höör",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1270",
+      "kommun": "Tomelilla",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1272",
+      "kommun": "Bromölla",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1273",
+      "kommun": "Osby",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1275",
+      "kommun": "Perstorp",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1276",
+      "kommun": "Klippan",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1277",
+      "kommun": "Åstorp",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1278",
+      "kommun": "Båstad",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1280",
+      "kommun": "Malmö",
+      "varning": "Endast 215/217 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1281",
+      "kommun": "Lund",
+      "varning": "Endast 84/85 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1282",
+      "kommun": "Landskrona",
+      "varning": "Endast 26/27 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1283",
+      "kommun": "Helsingborg",
+      "varning": "Endast 92/93 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1284",
+      "kommun": "Höganäs",
+      "varning": "Endast 15/16 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1285",
+      "kommun": "Eslöv",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1286",
+      "kommun": "Ystad",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1287",
+      "kommun": "Trelleborg",
+      "varning": "Endast 27/29 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1290",
+      "kommun": "Kristianstad",
+      "varning": "Endast 43/45 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1291",
+      "kommun": "Simrishamn",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1292",
+      "kommun": "Ängelholm",
+      "varning": "Endast 22/23 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1293",
+      "kommun": "Hässleholm",
+      "varning": "Endast 34/35 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1315",
+      "kommun": "Hylte",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1380",
+      "kommun": "Halmstad",
+      "varning": "Endast 68/69 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1381",
+      "kommun": "Laholm",
+      "varning": "Endast 16/17 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1382",
+      "kommun": "Falkenberg",
+      "varning": "Endast 27/28 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1383",
+      "kommun": "Varberg",
+      "varning": "Endast 39/41 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1384",
+      "kommun": "Kungsbacka",
+      "varning": "Endast 46/47 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1401",
+      "kommun": "Härryda",
+      "varning": "Endast 21/22 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1402",
+      "kommun": "Partille",
+      "varning": "Endast 22/23 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1407",
+      "kommun": "Öckerö",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1415",
+      "kommun": "Stenungsund",
+      "varning": "Endast 17/18 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1419",
+      "kommun": "Tjörn",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1421",
+      "kommun": "Orust",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1427",
+      "kommun": "Sotenäs",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1430",
+      "kommun": "Munkedal",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1435",
+      "kommun": "Tanum",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1438",
+      "kommun": "Dals-Ed",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1439",
+      "kommun": "Färgelanda",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1440",
+      "kommun": "Ale",
+      "varning": "Endast 19/20 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1441",
+      "kommun": "Lerum",
+      "varning": "Endast 24/25 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1442",
+      "kommun": "Vårgårda",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1443",
+      "kommun": "Bollebygd",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1444",
+      "kommun": "Grästorp",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1445",
+      "kommun": "Essunga",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1446",
+      "kommun": "Karlsborg",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1447",
+      "kommun": "Gullspång",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1447",
+      "kommun": "Gullspång",
+      "varning": "\"Övriga anmälda partier\" utgör 6.2% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "1452",
+      "kommun": "Tranemo",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1460",
+      "kommun": "Bengtsfors",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1461",
+      "kommun": "Mellerud",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1462",
+      "kommun": "Lilla Edet",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1463",
+      "kommun": "Mark",
+      "varning": "Endast 22/23 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1465",
+      "kommun": "Svenljunga",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1466",
+      "kommun": "Herrljunga",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1470",
+      "kommun": "Vara",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1471",
+      "kommun": "Götene",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1472",
+      "kommun": "Tibro",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1473",
+      "kommun": "Töreboda",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1480",
+      "kommun": "Göteborg",
+      "varning": "Endast 396/397 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1481",
+      "kommun": "Mölndal",
+      "varning": "Endast 46/47 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1482",
+      "kommun": "Kungälv",
+      "varning": "Endast 28/29 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1482",
+      "kommun": "Kungälv",
+      "varning": "\"Övriga anmälda partier\" utgör 7% av rösterna i denna kommun — ett enskilt parti kan ligga dolt däri med >= 2%. Bör verifieras mot slutlig räkning."
+    },
+    {
+      "kommunkod": "1484",
+      "kommun": "Lysekil",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1485",
+      "kommun": "Uddevalla",
+      "varning": "Endast 34/35 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1486",
+      "kommun": "Strömstad",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1487",
+      "kommun": "Vänersborg",
+      "varning": "Endast 23/24 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1488",
+      "kommun": "Trollhättan",
+      "varning": "Endast 34/36 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1489",
+      "kommun": "Alingsås",
+      "varning": "Endast 25/26 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1490",
+      "kommun": "Borås",
+      "varning": "Endast 80/83 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1491",
+      "kommun": "Ulricehamn",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1492",
+      "kommun": "Åmål",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1493",
+      "kommun": "Mariestad",
+      "varning": "Endast 16/17 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1494",
+      "kommun": "Lidköping",
+      "varning": "Endast 22/23 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1495",
+      "kommun": "Skara",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1496",
+      "kommun": "Skövde",
+      "varning": "Endast 32/33 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1497",
+      "kommun": "Hjo",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1498",
+      "kommun": "Tidaholm",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1499",
+      "kommun": "Falköping",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1715",
+      "kommun": "Kil",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1730",
+      "kommun": "Eda",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1737",
+      "kommun": "Torsby",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1760",
+      "kommun": "Storfors",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1761",
+      "kommun": "Hammarö",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1762",
+      "kommun": "Munkfors",
+      "varning": "Endast 2/3 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1763",
+      "kommun": "Forshaga",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1764",
+      "kommun": "Grums",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1765",
+      "kommun": "Årjäng",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1766",
+      "kommun": "Sunne",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1780",
+      "kommun": "Karlstad",
+      "varning": "Endast 61/62 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1781",
+      "kommun": "Kristinehamn",
+      "varning": "Endast 15/16 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1782",
+      "kommun": "Filipstad",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1783",
+      "kommun": "Hagfors",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1784",
+      "kommun": "Arvika",
+      "varning": "Endast 17/18 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1785",
+      "kommun": "Säffle",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1814",
+      "kommun": "Lekeberg",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1860",
+      "kommun": "Laxå",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1861",
+      "kommun": "Hallsberg",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1862",
+      "kommun": "Degerfors",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1863",
+      "kommun": "Hällefors",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1864",
+      "kommun": "Ljusnarsberg",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1880",
+      "kommun": "Örebro",
+      "varning": "Endast 109/111 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1881",
+      "kommun": "Kumla",
+      "varning": "Endast 12/13 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1882",
+      "kommun": "Askersund",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1883",
+      "kommun": "Karlskoga",
+      "varning": "Endast 17/18 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1884",
+      "kommun": "Nora",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1885",
+      "kommun": "Lindesberg",
+      "varning": "Endast 16/17 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1904",
+      "kommun": "Skinnskatteberg",
+      "varning": "Endast 2/3 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1907",
+      "kommun": "Surahammar",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1960",
+      "kommun": "Kungsör",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1961",
+      "kommun": "Hallstahammar",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1962",
+      "kommun": "Norberg",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1980",
+      "kommun": "Västerås",
+      "varning": "Endast 98/99 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1981",
+      "kommun": "Sala",
+      "varning": "Endast 12/13 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1982",
+      "kommun": "Fagersta",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1983",
+      "kommun": "Köping",
+      "varning": "Endast 14/15 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "1984",
+      "kommun": "Arboga",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2021",
+      "kommun": "Vansbro",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2023",
+      "kommun": "Malung-Sälen",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2026",
+      "kommun": "Gagnef",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2029",
+      "kommun": "Leksand",
+      "varning": "Endast 9/10 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2031",
+      "kommun": "Rättvik",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2034",
+      "kommun": "Orsa",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2039",
+      "kommun": "Älvdalen",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2061",
+      "kommun": "Smedjebacken",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2062",
+      "kommun": "Mora",
+      "varning": "Endast 12/13 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2080",
+      "kommun": "Falun",
+      "varning": "Endast 38/39 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2081",
+      "kommun": "Borlänge",
+      "varning": "Endast 28/29 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2082",
+      "kommun": "Säter",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2083",
+      "kommun": "Hedemora",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2084",
+      "kommun": "Avesta",
+      "varning": "Endast 12/13 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2085",
+      "kommun": "Ludvika",
+      "varning": "Endast 15/16 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2101",
+      "kommun": "Ockelbo",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2104",
+      "kommun": "Hofors",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2121",
+      "kommun": "Ovanåker",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2132",
+      "kommun": "Nordanstig",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2161",
+      "kommun": "Ljusdal",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2180",
+      "kommun": "Gävle",
+      "varning": "Endast 53/54 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2181",
+      "kommun": "Sandviken",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2182",
+      "kommun": "Söderhamn",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2183",
+      "kommun": "Bollnäs",
+      "varning": "Endast 17/18 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2184",
+      "kommun": "Hudiksvall",
+      "varning": "Endast 22/23 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2260",
+      "kommun": "Ånge",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2262",
+      "kommun": "Timrå",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2280",
+      "kommun": "Härnösand",
+      "varning": "Endast 14/15 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2281",
+      "kommun": "Sundsvall",
+      "varning": "Endast 57/59 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2282",
+      "kommun": "Kramfors",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2283",
+      "kommun": "Sollefteå",
+      "varning": "Endast 17/18 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2284",
+      "kommun": "Örnsköldsvik",
+      "varning": "Endast 39/41 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2303",
+      "kommun": "Ragunda",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2305",
+      "kommun": "Bräcke",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2309",
+      "kommun": "Krokom",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2313",
+      "kommun": "Strömsund",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2321",
+      "kommun": "Åre",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2326",
+      "kommun": "Berg",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2361",
+      "kommun": "Härjedalen",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2380",
+      "kommun": "Östersund",
+      "varning": "Endast 41/42 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2401",
+      "kommun": "Nordmaling",
+      "varning": "Endast 6/7 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2403",
+      "kommun": "Bjurholm",
+      "varning": "Endast 1/2 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2404",
+      "kommun": "Vindeln",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2409",
+      "kommun": "Robertsfors",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2417",
+      "kommun": "Norsjö",
+      "varning": "Endast 2/3 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2418",
+      "kommun": "Malå",
+      "varning": "Endast 2/3 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2421",
+      "kommun": "Storuman",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2422",
+      "kommun": "Sorsele",
+      "varning": "Endast 1/2 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2425",
+      "kommun": "Dorotea",
+      "varning": "Endast 1/2 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2460",
+      "kommun": "Vännäs",
+      "varning": "Endast 5/6 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2462",
+      "kommun": "Vilhelmina",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2463",
+      "kommun": "Åsele",
+      "varning": "Endast 2/3 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2480",
+      "kommun": "Umeå",
+      "varning": "Endast 78/80 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2481",
+      "kommun": "Lycksele",
+      "varning": "Endast 8/9 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2482",
+      "kommun": "Skellefteå",
+      "varning": "Endast 50/51 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2505",
+      "kommun": "Arvidsjaur",
+      "varning": "Endast 3/4 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2506",
+      "kommun": "Arjeplog",
+      "varning": "Endast 1/2 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2510",
+      "kommun": "Jokkmokk",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2513",
+      "kommun": "Överkalix",
+      "varning": "Endast 2/3 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2514",
+      "kommun": "Kalix",
+      "varning": "Endast 10/11 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2518",
+      "kommun": "Övertorneå",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2521",
+      "kommun": "Pajala",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2523",
+      "kommun": "Gällivare",
+      "varning": "Endast 11/12 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2560",
+      "kommun": "Älvsbyn",
+      "varning": "Endast 4/5 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2580",
+      "kommun": "Luleå",
+      "varning": "Endast 49/50 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2581",
+      "kommun": "Piteå",
+      "varning": "Endast 27/28 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2582",
+      "kommun": "Boden",
+      "varning": "Endast 18/19 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2583",
+      "kommun": "Haparanda",
+      "varning": "Endast 7/8 valdistrikt räknade."
+    },
+    {
+      "kommunkod": "2584",
+      "kommun": "Kiruna",
+      "varning": "Endast 13/14 valdistrikt räknade."
+    }
+  ],
+  "resultat": [
+    {
+      "parti": "OR",
+      "partinamn": "Oberoende Realister",
+      "kommun": "Hagfors",
+      "kommunkod": "1783",
+      "rostandelProcent": 41.9,
+      "antalRoster": 2761,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "DKL",
+      "partinamn": "Dorotea Kommunlista",
+      "kommun": "Dorotea",
+      "kommunkod": "2425",
+      "rostandelProcent": 36.8,
+      "antalRoster": 403,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "GÖF",
+      "partinamn": "Götenes framtid",
+      "kommun": "Götene",
+      "kommunkod": "1471",
+      "rostandelProcent": 35,
+      "antalRoster": 2676,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FoAr",
+      "partinamn": "Folkinitiativet Arjeplog",
+      "kommun": "Arjeplog",
+      "kommunkod": "2506",
+      "rostandelProcent": 33.4,
+      "antalRoster": 522,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ViP",
+      "partinamn": "Vi i Perstorp",
+      "kommun": "Perstorp",
+      "kommunkod": "1275",
+      "rostandelProcent": 33,
+      "antalRoster": 1201,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KNU",
+      "partinamn": "Knivsta.Nu",
+      "kommun": "Knivsta",
+      "kommunkod": "0330",
+      "rostandelProcent": 32.1,
+      "antalRoster": 4195,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HP",
+      "partinamn": "Hälleforspartiet",
+      "kommun": "Hällefors",
+      "kommunkod": "1863",
+      "rostandelProcent": 28.4,
+      "antalRoster": 1064,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VFÅ",
+      "partinamn": "Vår Framtids politiska utskott",
+      "kommun": "Ånge",
+      "kommunkod": "2260",
+      "rostandelProcent": 28.4,
+      "antalRoster": 1500,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NorrP",
+      "partinamn": "Norrlandspartiet",
+      "kommun": "Kramfors",
+      "kommunkod": "2282",
+      "rostandelProcent": 25,
+      "antalRoster": 2697,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FFK",
+      "partinamn": "FRAM FÖR KOMMUNEN",
+      "kommun": "Grästorp",
+      "kommunkod": "1444",
+      "rostandelProcent": 24.4,
+      "antalRoster": 758,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MiG",
+      "partinamn": "Medborgarpartiet i Gislaved (MiG)",
+      "kommun": "Gislaved",
+      "kommunkod": "0662",
+      "rostandelProcent": 24.1,
+      "antalRoster": 4078,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ML",
+      "partinamn": "Malålistan",
+      "kommun": "Malå",
+      "kommunkod": "2418",
+      "rostandelProcent": 22.2,
+      "antalRoster": 308,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SPVG",
+      "partinamn": "Sjukvårdspartiet - Västra Götaland",
+      "kommun": "Lidköping",
+      "kommunkod": "1494",
+      "rostandelProcent": 22,
+      "antalRoster": 5602,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Övertorneå",
+      "kommunkod": "2518",
+      "rostandelProcent": 21.3,
+      "antalRoster": 442,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Kons",
+      "partinamn": "Konsensus - För Vadstenas Bästa",
+      "kommun": "Vadstena",
+      "kommunkod": "0584",
+      "rostandelProcent": 20.5,
+      "antalRoster": 919,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MOP",
+      "partinamn": "Morapartiet",
+      "kommun": "Mora",
+      "kommunkod": "2062",
+      "rostandelProcent": 20.5,
+      "antalRoster": 2686,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "DiN",
+      "partinamn": "Demokraterna i Norberg",
+      "kommun": "Norberg",
+      "kommunkod": "1962",
+      "rostandelProcent": 20.3,
+      "antalRoster": 640,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VF",
+      "partinamn": "Vår Framtid",
+      "kommun": "Klippan",
+      "kommunkod": "1276",
+      "rostandelProcent": 19.8,
+      "antalRoster": 1996,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ByP",
+      "partinamn": "Bygdepartiet",
+      "kommun": "Leksand",
+      "kommunkod": "2029",
+      "rostandelProcent": 19.8,
+      "antalRoster": 2113,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VV",
+      "partinamn": "Västjämtlands Väl",
+      "kommun": "Åre",
+      "kommunkod": "2321",
+      "rostandelProcent": 19.8,
+      "antalRoster": 1492,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "WAX",
+      "partinamn": "Waxholmspartiet - borgerligt alternativ",
+      "kommun": "Vaxholm",
+      "kommunkod": "0187",
+      "rostandelProcent": 19,
+      "antalRoster": 1434,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NU",
+      "partinamn": "Nya Ulricehamn",
+      "kommun": "Ulricehamn",
+      "kommunkod": "1491",
+      "rostandelProcent": 18.4,
+      "antalRoster": 2654,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ÖrP",
+      "partinamn": "Örebropartiet",
+      "kommun": "Örebro",
+      "kommunkod": "1880",
+      "rostandelProcent": 17.2,
+      "antalRoster": 17891,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "JVB",
+      "partinamn": "Jämtlands Väl Bräcke",
+      "kommun": "Bräcke",
+      "kommunkod": "2305",
+      "rostandelProcent": 15.4,
+      "antalRoster": 451,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Bollp",
+      "partinamn": "Bollnäspartiet",
+      "kommun": "Bollnäs",
+      "kommunkod": "2183",
+      "rostandelProcent": 15.2,
+      "antalRoster": 2472,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LP",
+      "partinamn": "LIDINGÖPARTIET",
+      "kommun": "Lidingö",
+      "kommunkod": "0186",
+      "rostandelProcent": 14.9,
+      "antalRoster": 4672,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SK",
+      "partinamn": "Surahammars kommunparti",
+      "kommun": "Surahammar",
+      "kommunkod": "1907",
+      "rostandelProcent": 14.4,
+      "antalRoster": 814,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "DO!T",
+      "partinamn": "De Oberoende i Torsby",
+      "kommun": "Torsby",
+      "kommunkod": "1737",
+      "rostandelProcent": 14.1,
+      "antalRoster": 878,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LB",
+      "partinamn": "Löddebygden",
+      "kommun": "Kävlinge",
+      "kommunkod": "1261",
+      "rostandelProcent": 14,
+      "antalRoster": 2963,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "TList",
+      "partinamn": "Tierpslistan",
+      "kommun": "Tierp",
+      "kommunkod": "0360",
+      "rostandelProcent": 13.7,
+      "antalRoster": 1825,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "AnS",
+      "partinamn": "Ansvar i samverkan",
+      "kommun": "Munkedal",
+      "kommunkod": "1430",
+      "rostandelProcent": 13.4,
+      "antalRoster": 790,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MED",
+      "partinamn": "Medborgerlig Samling",
+      "kommun": "Laholm",
+      "kommunkod": "1381",
+      "rostandelProcent": 13.3,
+      "antalRoster": 2241,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SjvV",
+      "partinamn": "Sjukvårdspartiet i Värmland",
+      "kommun": "Säffle",
+      "kommunkod": "1785",
+      "rostandelProcent": 13.3,
+      "antalRoster": 1110,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FJK",
+      "partinamn": "Framtid i Jokkmokks kommun",
+      "kommun": "Jokkmokk",
+      "kommunkod": "2510",
+      "rostandelProcent": 13.2,
+      "antalRoster": 362,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VF",
+      "partinamn": "Vetlanda framåtanda",
+      "kommun": "Vetlanda",
+      "kommunkod": "0685",
+      "rostandelProcent": 13.1,
+      "antalRoster": 2213,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "St",
+      "partinamn": "Stenungsundspartiet",
+      "kommun": "Stenungsund",
+      "kommunkod": "1415",
+      "rostandelProcent": 13,
+      "antalRoster": 2191,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Fok",
+      "partinamn": "Fokus",
+      "kommun": "Lomma",
+      "kommunkod": "1262",
+      "rostandelProcent": 12.6,
+      "antalRoster": 2011,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FrSÖ",
+      "partinamn": "Framtid S Övertorneå",
+      "kommun": "Övertorneå",
+      "kommunkod": "2518",
+      "rostandelProcent": 12.5,
+      "antalRoster": 260,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NL",
+      "partinamn": "Nackalistan",
+      "kommun": "Nacka",
+      "kommunkod": "0182",
+      "rostandelProcent": 12.3,
+      "antalRoster": 8784,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FPO",
+      "partinamn": "Folkviljan Orust",
+      "kommun": "Orust",
+      "kommunkod": "1421",
+      "rostandelProcent": 12.1,
+      "antalRoster": 1213,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NP",
+      "partinamn": "Nykvarnspartiet",
+      "kommun": "Nykvarn",
+      "kommunkod": "0140",
+      "rostandelProcent": 12,
+      "antalRoster": 900,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SköP",
+      "partinamn": "Skövdepartiet",
+      "kommun": "Skövde",
+      "kommunkod": "1496",
+      "rostandelProcent": 12,
+      "antalRoster": 4109,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "BJP",
+      "partinamn": "Bjärepartiet",
+      "kommun": "Båstad",
+      "kommunkod": "1278",
+      "rostandelProcent": 11.7,
+      "antalRoster": 1256,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "DemR",
+      "partinamn": "Demokratiresan",
+      "kommun": "Sotenäs",
+      "kommunkod": "1427",
+      "rostandelProcent": 11.7,
+      "antalRoster": 675,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LjP",
+      "partinamn": "Ljusdalsbygdens parti",
+      "kommun": "Ljusdal",
+      "kommunkod": "2161",
+      "rostandelProcent": 11.7,
+      "antalRoster": 1312,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VB",
+      "partinamn": "Väsbys Bästa",
+      "kommun": "Upplands Väsby",
+      "kommunkod": "0114",
+      "rostandelProcent": 11.3,
+      "antalRoster": 3040,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "BÅP",
+      "partinamn": "Bålstapartiet",
+      "kommun": "Håbo",
+      "kommunkod": "0305",
+      "rostandelProcent": 11.3,
+      "antalRoster": 1503,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HD",
+      "partinamn": "HåboDemokraterna",
+      "kommun": "Håbo",
+      "kommunkod": "0305",
+      "rostandelProcent": 11.2,
+      "antalRoster": 1497,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Svenljunga",
+      "kommunkod": "1465",
+      "rostandelProcent": 10.9,
+      "antalRoster": 665,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Nora",
+      "kommunkod": "1884",
+      "rostandelProcent": 10.9,
+      "antalRoster": 669,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VFiK",
+      "partinamn": "Vanligt Folk i Köpings kommun",
+      "kommun": "Köping",
+      "kommunkod": "1983",
+      "rostandelProcent": 10.5,
+      "antalRoster": 1434,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "hvkb",
+      "partinamn": "Hela Vara kommuns bästa",
+      "kommun": "Vara",
+      "kommunkod": "1470",
+      "rostandelProcent": 10.4,
+      "antalRoster": 1029,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "TuP",
+      "partinamn": "Tullingepartiet",
+      "kommun": "Botkyrka",
+      "kommunkod": "0127",
+      "rostandelProcent": 10.3,
+      "antalRoster": 4682,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "TJÖP",
+      "partinamn": "TJÖRNPARTIET",
+      "kommun": "Tjörn",
+      "kommunkod": "1419",
+      "rostandelProcent": 10.2,
+      "antalRoster": 1112,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ÅSP",
+      "partinamn": "Åselepartiet",
+      "kommun": "Åsele",
+      "kommunkod": "2463",
+      "rostandelProcent": 10.2,
+      "antalRoster": 137,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SI",
+      "partinamn": "Söderköpingsinitiativet",
+      "kommun": "Söderköping",
+      "kommunkod": "0582",
+      "rostandelProcent": 10.1,
+      "antalRoster": 972,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LL",
+      "partinamn": "Linköpingslistan",
+      "kommun": "Linköping",
+      "kommunkod": "0580",
+      "rostandelProcent": 10,
+      "antalRoster": 10828,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LP.NU",
+      "partinamn": "Lysekilspartiet",
+      "kommun": "Lysekil",
+      "kommunkod": "1484",
+      "rostandelProcent": 9.9,
+      "antalRoster": 901,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ArP",
+      "partinamn": "Arvikapartiet",
+      "kommun": "Arvika",
+      "kommunkod": "1784",
+      "rostandelProcent": 9.9,
+      "antalRoster": 1458,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KOSA",
+      "partinamn": "Kommunal Samling",
+      "kommun": "Gagnef",
+      "kommunkod": "2026",
+      "rostandelProcent": 9.9,
+      "antalRoster": 638,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "TimP",
+      "partinamn": "Timråpartiet",
+      "kommun": "Timrå",
+      "kommunkod": "2262",
+      "rostandelProcent": 9.8,
+      "antalRoster": 1103,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Lindesberg",
+      "kommunkod": "1885",
+      "rostandelProcent": 9.6,
+      "antalRoster": 1330,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NorrP",
+      "partinamn": "Norrlandspartiet",
+      "kommun": "Timrå",
+      "kommunkod": "2262",
+      "rostandelProcent": 9.6,
+      "antalRoster": 1071,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KL",
+      "partinamn": "Kommunlistan",
+      "kommun": "Älvdalen",
+      "kommunkod": "2039",
+      "rostandelProcent": 9.2,
+      "antalRoster": 368,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ROP",
+      "partinamn": "Ronnebypartiet",
+      "kommun": "Ronneby",
+      "kommunkod": "1081",
+      "rostandelProcent": 9.1,
+      "antalRoster": 1645,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NE",
+      "partinamn": "Nystart Enköping (NE)",
+      "kommun": "Enköping",
+      "kommunkod": "0381",
+      "rostandelProcent": 8.9,
+      "antalRoster": 2696,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Alt",
+      "partinamn": "Alternativet",
+      "kommun": "Bromölla",
+      "kommunkod": "1272",
+      "rostandelProcent": 8.9,
+      "antalRoster": 679,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "JVK",
+      "partinamn": "Jämtlands Väl Krokom",
+      "kommun": "Krokom",
+      "kommunkod": "2309",
+      "rostandelProcent": 8.9,
+      "antalRoster": 859,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SBÄ",
+      "partinamn": "Salas bästa",
+      "kommun": "Sala",
+      "kommunkod": "1981",
+      "rostandelProcent": 8.7,
+      "antalRoster": 1229,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VS",
+      "partinamn": "Vårt Söderslätt",
+      "kommun": "Trelleborg",
+      "kommunkod": "1287",
+      "rostandelProcent": 8.6,
+      "antalRoster": 2481,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KLH",
+      "partinamn": "Kommunlistan",
+      "kommun": "Hedemora",
+      "kommunkod": "2083",
+      "rostandelProcent": 8.5,
+      "antalRoster": 752,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NorrP",
+      "partinamn": "Norrlandspartiet",
+      "kommun": "Sollefteå",
+      "kommunkod": "2283",
+      "rostandelProcent": 8.4,
+      "antalRoster": 935,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HEL",
+      "partinamn": "Hela Edas Lista",
+      "kommun": "Eda",
+      "kommunkod": "1730",
+      "rostandelProcent": 8.2,
+      "antalRoster": 313,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ALV",
+      "partinamn": "Alvesta Alternativet",
+      "kommun": "Alvesta",
+      "kommunkod": "0764",
+      "rostandelProcent": 8.1,
+      "antalRoster": 967,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Ö",
+      "partinamn": "Mälaröpartiet",
+      "kommun": "Ekerö",
+      "kommunkod": "0125",
+      "rostandelProcent": 8,
+      "antalRoster": 1442,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ÅP",
+      "partinamn": "Åstorpspartiet",
+      "kommun": "Åstorp",
+      "kommunkod": "1277",
+      "rostandelProcent": 8,
+      "antalRoster": 702,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FOV",
+      "partinamn": "Folkets Väl",
+      "kommun": "Hässleholm",
+      "kommunkod": "1293",
+      "rostandelProcent": 8,
+      "antalRoster": 2563,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NorrP",
+      "partinamn": "Norrlandspartiet",
+      "kommun": "Örnsköldsvik",
+      "kommunkod": "2284",
+      "rostandelProcent": 7.8,
+      "antalRoster": 2770,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "R",
+      "partinamn": "Rönningepartiet",
+      "kommun": "Salem",
+      "kommunkod": "0128",
+      "rostandelProcent": 7.7,
+      "antalRoster": 714,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "EP",
+      "partinamn": "EngelholmsPartiet",
+      "kommun": "Ängelholm",
+      "kommunkod": "1292",
+      "rostandelProcent": 7.7,
+      "antalRoster": 2233,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "DEM",
+      "partinamn": "Demokraterna",
+      "kommun": "Göteborg",
+      "kommunkod": "1480",
+      "rostandelProcent": 7.7,
+      "antalRoster": 28221,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VSKB",
+      "partinamn": "Västra Initiativet",
+      "kommun": "Sollefteå",
+      "kommunkod": "2283",
+      "rostandelProcent": 7.7,
+      "antalRoster": 856,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ASB",
+      "partinamn": "Aktiv samling - Bodenalternativet",
+      "kommun": "Boden",
+      "kommunkod": "2582",
+      "rostandelProcent": 7.7,
+      "antalRoster": 1339,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NOR",
+      "partinamn": "Norapartiet",
+      "kommun": "Nora",
+      "kommunkod": "1884",
+      "rostandelProcent": 7.6,
+      "antalRoster": 465,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "AfR",
+      "partinamn": "Allt för Ragunda",
+      "kommun": "Ragunda",
+      "kommunkod": "2303",
+      "rostandelProcent": 7.6,
+      "antalRoster": 213,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "UddP",
+      "partinamn": "Uddevallapartiet",
+      "kommun": "Uddevalla",
+      "kommunkod": "1485",
+      "rostandelProcent": 7.5,
+      "antalRoster": 2552,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Ddem",
+      "partinamn": "Dalademokraterna",
+      "kommun": "Ludvika",
+      "kommunkod": "2085",
+      "rostandelProcent": 7.5,
+      "antalRoster": 1177,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LM",
+      "partinamn": "Lokalpartiet Malung-Sälen",
+      "kommun": "Malung-Sälen",
+      "kommunkod": "2023",
+      "rostandelProcent": 7.3,
+      "antalRoster": 459,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "nop",
+      "partinamn": "nordanstigspartiet.se",
+      "kommun": "Nordanstig",
+      "kommunkod": "2132",
+      "rostandelProcent": 7.3,
+      "antalRoster": 409,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Haparanda",
+      "kommunkod": "2583",
+      "rostandelProcent": 7.3,
+      "antalRoster": 284,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KiM",
+      "partinamn": "KommunPartiet Mellerud",
+      "kommun": "Mellerud",
+      "kommunkod": "1461",
+      "rostandelProcent": 7.2,
+      "antalRoster": 397,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MED",
+      "partinamn": "Medborgerlig Samling",
+      "kommun": "Järfälla",
+      "kommunkod": "0123",
+      "rostandelProcent": 7,
+      "antalRoster": 3450,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Kinda",
+      "kommunkod": "0513",
+      "rostandelProcent": 6.9,
+      "antalRoster": 407,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Vfp",
+      "partinamn": "Medborgarpartiet",
+      "kommun": "Vänersborg",
+      "kommunkod": "1487",
+      "rostandelProcent": 6.9,
+      "antalRoster": 1708,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FÖL",
+      "partinamn": "Framtid Öland",
+      "kommun": "Borgholm",
+      "kommunkod": "0885",
+      "rostandelProcent": 6.7,
+      "antalRoster": 492,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HfH",
+      "partinamn": "Hjärta för Halmstad",
+      "kommun": "Halmstad",
+      "kommunkod": "1380",
+      "rostandelProcent": 6.7,
+      "antalRoster": 4474,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SN",
+      "partinamn": "Sorundanet Nynäshamns kommunparti",
+      "kommun": "Nynäshamn",
+      "kommunkod": "0192",
+      "rostandelProcent": 6.6,
+      "antalRoster": 1163,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Valdemarsvik",
+      "kommunkod": "0563",
+      "rostandelProcent": 6.6,
+      "antalRoster": 325,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VOXH",
+      "partinamn": "Vox Humana - Folkets Röst",
+      "kommun": "Härjedalen",
+      "kommunkod": "2361",
+      "rostandelProcent": 6.6,
+      "antalRoster": 408,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ÄS",
+      "partinamn": "Älska Svedala",
+      "kommun": "Svedala",
+      "kommunkod": "1263",
+      "rostandelProcent": 6.4,
+      "antalRoster": 925,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HS",
+      "partinamn": "Hela Sunne",
+      "kommun": "Sunne",
+      "kommunkod": "1766",
+      "rostandelProcent": 6.3,
+      "antalRoster": 502,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NorrP",
+      "partinamn": "Norrlandspartiet",
+      "kommun": "Härnösand",
+      "kommunkod": "2280",
+      "rostandelProcent": 6.3,
+      "antalRoster": 967,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ROSP",
+      "partinamn": "Roslagspartiet",
+      "kommun": "Österåker",
+      "kommunkod": "0117",
+      "rostandelProcent": 6.1,
+      "antalRoster": 1869,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NorrP",
+      "partinamn": "Norrlandspartiet",
+      "kommun": "Ånge",
+      "kommunkod": "2260",
+      "rostandelProcent": 6,
+      "antalRoster": 317,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FR",
+      "partinamn": "Folkets Röst",
+      "kommun": "Bollebygd",
+      "kommunkod": "1443",
+      "rostandelProcent": 5.9,
+      "antalRoster": 352,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FöNyL",
+      "partinamn": "FörNyaLund",
+      "kommun": "Lund",
+      "kommunkod": "1281",
+      "rostandelProcent": 5.7,
+      "antalRoster": 4894,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ViP",
+      "partinamn": "Vingåkerspartiet - ViP",
+      "kommun": "Vingåker",
+      "kommunkod": "0428",
+      "rostandelProcent": 5.5,
+      "antalRoster": 301,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VT",
+      "partinamn": "Vi Tidaholm",
+      "kommun": "Tidaholm",
+      "kommunkod": "1498",
+      "rostandelProcent": 5.5,
+      "antalRoster": 399,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SKL",
+      "partinamn": "Kommunlistan",
+      "kommun": "Storuman",
+      "kommunkod": "2421",
+      "rostandelProcent": 5.4,
+      "antalRoster": 164,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SL",
+      "partinamn": "Sámelistu/Samelistan Partipolitiskt obunden",
+      "kommun": "Kiruna",
+      "kommunkod": "2584",
+      "rostandelProcent": 5.3,
+      "antalRoster": 690,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LOK",
+      "partinamn": "Lokalpartiet",
+      "kommun": "Strängnäs",
+      "kommunkod": "0486",
+      "rostandelProcent": 5,
+      "antalRoster": 1164,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MED",
+      "partinamn": "Medborgerlig Samling",
+      "kommun": "Mullsjö",
+      "kommunkod": "0642",
+      "rostandelProcent": 5,
+      "antalRoster": 225,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SAFE",
+      "partinamn": "SAFE - Solidaritet Arbete Fred Ekologi",
+      "kommun": "Nässjö",
+      "kommunkod": "0682",
+      "rostandelProcent": 5,
+      "antalRoster": 961,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SOKP",
+      "partinamn": "SPORT- OCH KOMMUNPARTIET",
+      "kommun": "Härryda",
+      "kommunkod": "1401",
+      "rostandelProcent": 5,
+      "antalRoster": 1217,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "DP",
+      "partinamn": "Drevvikenpartiet",
+      "kommun": "Huddinge",
+      "kommunkod": "0126",
+      "rostandelProcent": 4.9,
+      "antalRoster": 3026,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SV",
+      "partinamn": "Samernas Väl",
+      "kommun": "Jokkmokk",
+      "kommunkod": "2510",
+      "rostandelProcent": 4.9,
+      "antalRoster": 136,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KFP",
+      "partinamn": "Kristna Familjepartiet",
+      "kommun": "Botkyrka",
+      "kommunkod": "0127",
+      "rostandelProcent": 4.7,
+      "antalRoster": 2141,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HaboD",
+      "partinamn": "Habodemokraterna",
+      "kommun": "Habo",
+      "kommunkod": "0643",
+      "rostandelProcent": 4.7,
+      "antalRoster": 367,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SFB",
+      "partinamn": "Sunt Förnuft Bengtsfors",
+      "kommun": "Bengtsfors",
+      "kommunkod": "1460",
+      "rostandelProcent": 4.6,
+      "antalRoster": 222,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "K",
+      "partinamn": "Kommunistiska Partiet",
+      "kommun": "Lysekil",
+      "kommunkod": "1484",
+      "rostandelProcent": 4.6,
+      "antalRoster": 418,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HP",
+      "partinamn": "Herrljunga Partiet",
+      "kommun": "Herrljunga",
+      "kommunkod": "1466",
+      "rostandelProcent": 4.5,
+      "antalRoster": 252,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "UtvP",
+      "partinamn": "Utvecklingspartiet",
+      "kommun": "Kungälv",
+      "kommunkod": "1482",
+      "rostandelProcent": 4.5,
+      "antalRoster": 1412,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Kiruna",
+      "kommunkod": "2584",
+      "rostandelProcent": 4.5,
+      "antalRoster": 583,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KV",
+      "partinamn": "Kommunens Väl",
+      "kommun": "Älvkarleby",
+      "kommunkod": "0319",
+      "rostandelProcent": 4.4,
+      "antalRoster": 260,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Boden",
+      "kommunkod": "2582",
+      "rostandelProcent": 4.4,
+      "antalRoster": 765,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MED",
+      "partinamn": "Medborgerlig Samling",
+      "kommun": "Karlshamn",
+      "kommunkod": "1082",
+      "rostandelProcent": 4.3,
+      "antalRoster": 870,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "PSF",
+      "partinamn": "Partiet Sunt Förnuft",
+      "kommun": "Vänersborg",
+      "kommunkod": "1487",
+      "rostandelProcent": 4.3,
+      "antalRoster": 1063,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LVD",
+      "partinamn": "Livbojen Vaxholmsdemokraterna",
+      "kommun": "Vaxholm",
+      "kommunkod": "0187",
+      "rostandelProcent": 4.2,
+      "antalRoster": 319,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "REAL",
+      "partinamn": "Realistpartiet",
+      "kommun": "Södertälje",
+      "kommunkod": "0181",
+      "rostandelProcent": 4.1,
+      "antalRoster": 2126,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Askersund",
+      "kommunkod": "1882",
+      "rostandelProcent": 4.1,
+      "antalRoster": 300,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KUST",
+      "partinamn": "KUSTLANDSPARTIET",
+      "kommun": "Oskarshamn",
+      "kommunkod": "0882",
+      "rostandelProcent": 3.9,
+      "antalRoster": 671,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "PF",
+      "partinamn": "Perstorps Framtid",
+      "kommun": "Perstorp",
+      "kommunkod": "1275",
+      "rostandelProcent": 3.9,
+      "antalRoster": 143,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Mal",
+      "partinamn": "Malmölistan",
+      "kommun": "Malmö",
+      "kommunkod": "1280",
+      "rostandelProcent": 3.9,
+      "antalRoster": 8375,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "NorrP",
+      "partinamn": "Norrlandspartiet",
+      "kommun": "Sundsvall",
+      "kommunkod": "2281",
+      "rostandelProcent": 3.9,
+      "antalRoster": 2511,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SGP",
+      "partinamn": "Skärgårdspartiet",
+      "kommun": "Värmdö",
+      "kommunkod": "0120",
+      "rostandelProcent": 3.8,
+      "antalRoster": 1116,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KVS",
+      "partinamn": "Kommunens Väl",
+      "kommun": "Skurup",
+      "kommunkod": "1264",
+      "rostandelProcent": 3.6,
+      "antalRoster": 373,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Tfs",
+      "partinamn": "tjugofyrasju",
+      "kommun": "Varberg",
+      "kommunkod": "1383",
+      "rostandelProcent": 3.6,
+      "antalRoster": 1491,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Piteå",
+      "kommunkod": "2581",
+      "rostandelProcent": 3.6,
+      "antalRoster": 1020,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "BAP",
+      "partinamn": "BARAPARTIET",
+      "kommun": "Svedala",
+      "kommunkod": "1263",
+      "rostandelProcent": 3.5,
+      "antalRoster": 507,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Kbabo",
+      "partinamn": "Kungsbackaborna",
+      "kommun": "Kungsbacka",
+      "kommunkod": "1384",
+      "rostandelProcent": 3.5,
+      "antalRoster": 1840,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Kalix",
+      "kommunkod": "2514",
+      "rostandelProcent": 3.5,
+      "antalRoster": 308,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Pajala",
+      "kommunkod": "2521",
+      "rostandelProcent": 3.5,
+      "antalRoster": 115,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SoL",
+      "partinamn": "SoL-partiet Sölvesborg och Lister",
+      "kommun": "Sölvesborg",
+      "kommunkod": "1083",
+      "rostandelProcent": 3.4,
+      "antalRoster": 373,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Lap",
+      "partinamn": "Laholmspartiet",
+      "kommun": "Laholm",
+      "kommunkod": "1381",
+      "rostandelProcent": 3.4,
+      "antalRoster": 565,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "VP",
+      "partinamn": "Varbergspartiet",
+      "kommun": "Varberg",
+      "kommunkod": "1383",
+      "rostandelProcent": 3.4,
+      "antalRoster": 1407,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FiA",
+      "partinamn": "FRAMTID I ALE",
+      "kommun": "Ale",
+      "kommunkod": "1440",
+      "rostandelProcent": 3.3,
+      "antalRoster": 647,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "AP",
+      "partinamn": "Demokratiska Sekulära Socialister Arbetarpartiet",
+      "kommun": "Umeå",
+      "kommunkod": "2480",
+      "rostandelProcent": 3.3,
+      "antalRoster": 2884,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "BoA",
+      "partinamn": "Lokalpartiet BoA",
+      "kommun": "Östhammar",
+      "kommunkod": "0382",
+      "rostandelProcent": 3.2,
+      "antalRoster": 464,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "EMP",
+      "partinamn": "EMPA(R)TIET",
+      "kommun": "Vaggeryd",
+      "kommunkod": "0665",
+      "rostandelProcent": 3.2,
+      "antalRoster": 295,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HF",
+      "partinamn": "Hörbys Framtid",
+      "kommun": "Hörby",
+      "kommunkod": "1266",
+      "rostandelProcent": 3.2,
+      "antalRoster": 309,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "PA",
+      "partinamn": "Politiskt Alternativ",
+      "kommun": "Vilhelmina",
+      "kommunkod": "2462",
+      "rostandelProcent": 3.2,
+      "antalRoster": 119,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Komv",
+      "partinamn": "Kommunens Väl",
+      "kommun": "Hylte",
+      "kommunkod": "1315",
+      "rostandelProcent": 3,
+      "antalRoster": 166,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Sollefteå",
+      "kommunkod": "2283",
+      "rostandelProcent": 3,
+      "antalRoster": 334,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "OS",
+      "partinamn": "Oberoende S",
+      "kommun": "Botkyrka",
+      "kommunkod": "0127",
+      "rostandelProcent": 2.8,
+      "antalRoster": 1297,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "ÅF",
+      "partinamn": "Åtvidabergs Framtid",
+      "kommun": "Åtvidaberg",
+      "kommunkod": "0561",
+      "rostandelProcent": 2.8,
+      "antalRoster": 186,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SoB",
+      "partinamn": "Sans o Balans",
+      "kommun": "Hammarö",
+      "kommunkod": "1761",
+      "rostandelProcent": 2.8,
+      "antalRoster": 289,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LPo",
+      "partinamn": "Landsbygdspartiet Oberoende",
+      "kommun": "Malung-Sälen",
+      "kommunkod": "2023",
+      "rostandelProcent": 2.8,
+      "antalRoster": 173,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "OÅ",
+      "partinamn": "OPiNiON Åsele",
+      "kommun": "Åsele",
+      "kommunkod": "2463",
+      "rostandelProcent": 2.7,
+      "antalRoster": 36,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SA",
+      "partinamn": "Socialistiskt Alternativ tidigare Rättvisepartiet Socialisterna",
+      "kommun": "Luleå",
+      "kommunkod": "2580",
+      "rostandelProcent": 2.7,
+      "antalRoster": 1391,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "WeP",
+      "partinamn": "Westbopartiet",
+      "kommun": "Gislaved",
+      "kommunkod": "0662",
+      "rostandelProcent": 2.6,
+      "antalRoster": 443,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "KIS",
+      "partinamn": "Klimatinitiativ Simrishamn",
+      "kommun": "Simrishamn",
+      "kommunkod": "1291",
+      "rostandelProcent": 2.6,
+      "antalRoster": 327,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "FL",
+      "partinamn": "Framtidspartiet i Lekeberg",
+      "kommun": "Lekeberg",
+      "kommunkod": "1814",
+      "rostandelProcent": 2.6,
+      "antalRoster": 135,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "PP(N)",
+      "partinamn": "Pensionärspartiet i Nynäshamns kommun",
+      "kommun": "Nynäshamn",
+      "kommunkod": "0192",
+      "rostandelProcent": 2.5,
+      "antalRoster": 434,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "UPDEM",
+      "partinamn": "Utvecklingspartiet demokraterna",
+      "kommun": "Uppsala",
+      "kommunkod": "0380",
+      "rostandelProcent": 2.5,
+      "antalRoster": 3829,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "LIH",
+      "partinamn": "Liberalt initiativ Habo kommun",
+      "kommun": "Habo",
+      "kommunkod": "0643",
+      "rostandelProcent": 2.5,
+      "antalRoster": 194,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HP",
+      "partinamn": "Halmstadpartiet",
+      "kommun": "Halmstad",
+      "kommunkod": "1380",
+      "rostandelProcent": 2.5,
+      "antalRoster": 1649,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MED",
+      "partinamn": "Medborgerlig Samling",
+      "kommun": "Gislaved",
+      "kommunkod": "0662",
+      "rostandelProcent": 2.3,
+      "antalRoster": 393,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "Nvk",
+      "partinamn": "Nordvärmlands kommunparti",
+      "kommun": "Torsby",
+      "kommunkod": "1737",
+      "rostandelProcent": 2.3,
+      "antalRoster": 141,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "MED",
+      "partinamn": "Medborgerlig Samling",
+      "kommun": "Höör",
+      "kommunkod": "1267",
+      "rostandelProcent": 2.2,
+      "antalRoster": 238,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "SJV",
+      "partinamn": "Sjukvårdspartiet",
+      "kommun": "Gällivare",
+      "kommunkod": "2523",
+      "rostandelProcent": 2.2,
+      "antalRoster": 216,
+      "rakningstillfalle": "preliminär"
+    },
+    {
+      "parti": "HP",
+      "partinamn": "Huddingepartiet",
+      "kommun": "Huddinge",
+      "kommunkod": "0126",
+      "rostandelProcent": 2,
+      "antalRoster": 1254,
+      "rakningstillfalle": "preliminär"
+    }
+  ]
+}

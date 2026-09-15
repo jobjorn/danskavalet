@@ -1,0 +1,579 @@
+<!doctype html>
+<title>2-procentslistan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F2F4F0;
+    --surface: #FFFFFF;
+    --surface-2: #E7EBE4;
+    --line: #D3D9CE;
+    --ink: #14181A;
+    --ink-muted: #525C56;
+    --ink-faint: #7C867F;
+    --accent: #1F4F46;
+    --accent-ink: #0F2E28;
+    --accent-soft: #DCE8E3;
+    --warning: #8A5A0F;
+    --warning-soft: #F3E4C8;
+    --critical: #9C3B2C;
+    --critical-soft: #F4DCD5;
+    --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10161A;
+      --surface: #182027;
+      --surface-2: #1E2A2E;
+      --line: #2A3A38;
+      --ink: #E7ECE8;
+      --ink-muted: #9BA7A2;
+      --ink-faint: #728079;
+      --accent: #63BCA6;
+      --accent-ink: #DCF5EC;
+      --accent-soft: #1C3733;
+      --warning: #E0B15C;
+      --warning-soft: #3A2E14;
+      --critical: #E8846E;
+      --critical-soft: #3A211B;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10161A;
+    --surface: #182027;
+    --surface-2: #1E2A2E;
+    --line: #2A3A38;
+    --ink: #E7ECE8;
+    --ink-muted: #9BA7A2;
+    --ink-faint: #728079;
+    --accent: #63BCA6;
+    --accent-ink: #DCF5EC;
+    --accent-soft: #1C3733;
+    --warning: #E0B15C;
+    --warning-soft: #3A2E14;
+    --critical: #E8846E;
+    --critical-soft: #3A211B;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+    padding-inline: max(16px, env(safe-area-inset-left, 0px));
+  }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+  ::selection { background: var(--accent-soft); color: var(--accent-ink); }
+
+  a { color: var(--accent); }
+
+  .wrap {
+    max-width: 920px;
+    margin-inline: auto;
+    padding-block: 28px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+  }
+  .masthead-text { max-width: 58ch; }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 2.7rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: 1.02rem;
+    color: var(--ink-muted);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .stamp {
+    flex: 0 0 auto;
+    border: 2px solid var(--critical);
+    color: var(--critical);
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border-radius: 3px;
+    transform: rotate(-2.5deg);
+    text-align: center;
+    line-height: 1.4;
+  }
+  .stamp small {
+    display: block;
+    font-family: var(--font-mono);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--ink-faint);
+    margin-top: 3px;
+  }
+
+  /* ---------- Stat tiles ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .stat {
+    background: var(--surface);
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .stat .n {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .stat .n.warn { color: var(--warning); }
+  .stat .n.crit { color: var(--critical); }
+  .stat .n.acc { color: var(--accent); }
+  .stat .lbl {
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    line-height: 1.3;
+  }
+
+  /* ---------- Sections ---------- */
+  section h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0 0 4px;
+    letter-spacing: -0.005em;
+  }
+  .section-note {
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+    margin: 0 0 18px;
+    max-width: 68ch;
+  }
+
+  /* ---------- Caveat callout ---------- */
+  .caveat {
+    background: var(--warning-soft);
+    border-left: 3px solid var(--warning);
+    border-radius: 0 8px 8px 0;
+    padding: 18px 20px;
+  }
+  .caveat h2 { font-size: 1.15rem; color: var(--ink); }
+  .caveat p { margin: 0 0 12px; font-size: 0.93rem; color: var(--ink); max-width: 66ch; }
+  .caveat p:last-of-type { margin-bottom: 14px; }
+  .risk-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .risk-chip {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    background: var(--critical-soft);
+    color: var(--critical);
+    border-radius: 5px;
+    padding: 5px 9px;
+    white-space: nowrap;
+  }
+  .risk-chip b { font-weight: 600; }
+
+  /* ---------- Chart ---------- */
+  .chart-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .chart-row {
+    display: grid;
+    grid-template-columns: minmax(120px, 220px) 1fr auto;
+    align-items: center;
+    gap: 10px;
+    min-height: 26px;
+  }
+  .chart-row .who {
+    font-size: 0.82rem;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--ink-muted);
+  }
+  .chart-row .who b { color: var(--ink); font-weight: 600; }
+  .chart-track {
+    background: var(--surface-2);
+    border-radius: 3px;
+    height: 18px;
+    overflow: hidden;
+  }
+  .chart-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    min-width: 3px;
+  }
+  .chart-row .val {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    width: 3.6em;
+  }
+
+  /* ---------- Table ---------- */
+  .table-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  #filter {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    padding: 9px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    min-width: 220px;
+    flex: 1 1 220px;
+  }
+  #filter:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .result-count {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+  .table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    background: var(--surface);
+  }
+  thead th {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    background: var(--surface-2);
+    text-align: left;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  thead th .arrow { opacity: 0.35; margin-left: 3px; }
+  thead th.sorted .arrow { opacity: 1; color: var(--accent); }
+  tbody td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-2); }
+  td.num, th.num { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  td.parti { font-family: var(--font-mono); font-weight: 600; }
+  td.namn { color: var(--ink-muted); }
+  td.kod { font-family: var(--font-mono); color: var(--ink-faint); }
+  .badge-prel {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: var(--warning-soft);
+    color: var(--warning);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .risk-mark {
+    color: var(--critical);
+    font-weight: 700;
+    margin-left: 4px;
+    cursor: help;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  footer code {
+    font-family: var(--font-mono);
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
+
+  @media (max-width: 560px) {
+    .chart-row { grid-template-columns: 1fr; row-gap: 3px; }
+    .chart-row .who { text-align: left; white-space: normal; }
+    .chart-row .val { width: auto; }
+    .masthead { flex-direction: column; }
+    .stamp { transform: none; align-self: flex-start; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="masthead-text">
+      <p class="eyebrow">Valmyndighetens resultatfiler · Kommunfullmäktige 2026</p>
+      <h1>2-procentslistan</h1>
+      <p class="lede">Partier som inte sitter i Riksdagen men som fick minst 2&nbsp;% av rösterna i minst en av landets 290 kommuners kommunfullmäktigeval, sammanställt kommun för kommun från Valmyndighetens mandatfördelningsfiler.</p>
+    </div>
+    <div class="stamp" id="stamp">Preliminärt resultat<small id="stamp-date"></small></div>
+  </header>
+
+  <section class="stats" aria-label="Sammanfattning">
+    <div class="stat"><span class="n" id="stat-kommuner">–</span><span class="lbl">kommuner i valet</span></div>
+    <div class="stat"><span class="n warn" id="stat-slutlig">–</span><span class="lbl">med slutlig räkning</span></div>
+    <div class="stat"><span class="n acc" id="stat-traffar">–</span><span class="lbl">träffar (parti × kommun)</span></div>
+    <div class="stat"><span class="n" id="stat-partier">–</span><span class="lbl">unika partier</span></div>
+    <div class="stat"><span class="n crit" id="stat-risk">–</span><span class="lbl">kommuner med dold risk</span></div>
+  </section>
+
+  <section class="caveat" aria-labelledby="caveat-h">
+    <h2 id="caveat-h">Så här preliminärt är resultatet</h2>
+    <p>Vid sammanställningstillfället hade <strong id="caveat-slutlig-text">–</strong> av landets kommuner en <em>slutlig</em> rösträkning klar – övriga räknas här på den <em>preliminära</em> filen, där mycket små partier kan klumpas ihop som &rdquo;Övriga anmälda partier&rdquo; istället för att redovisas var för sig.</p>
+    <p>I <strong id="caveat-risk-count">–</strong> kommuner utgör den klumpen ensam redan minst 2&nbsp;% av rösterna – där kan alltså ett enskilt parti ligga dolt i denna sammanställning tills slutlig räkning finns:</p>
+    <ul class="risk-list" id="risk-list"></ul>
+  </section>
+
+  <section aria-labelledby="chart-h">
+    <h2 id="chart-h">Störst lokalt stöd</h2>
+    <p class="section-note">De 15 parti–kommun-kombinationerna med högst röstandel i sammanställningen.</p>
+    <div class="chart-rows" id="chart"></div>
+  </section>
+
+  <section aria-labelledby="table-h">
+    <h2 id="table-h">Samtliga träffar</h2>
+    <p class="section-note">Sorterat på röstandel i fallande ordning som standard. Klicka på en kolumnrubrik för att sortera om, eller sök på parti eller kommun.</p>
+    <div class="table-toolbar">
+      <input type="search" id="filter" placeholder="Sök på parti eller kommun…" aria-label="Sök på parti eller kommun">
+      <span class="result-count" id="result-count"></span>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-key="parti" tabindex="0">Parti<span class="arrow">↕</span></th>
+            <th data-key="partinamn" tabindex="0">Partinamn<span class="arrow">↕</span></th>
+            <th data-key="kommun" tabindex="0">Kommun<span class="arrow">↕</span></th>
+            <th data-key="kommunkod" tabindex="0">Kod<span class="arrow">↕</span></th>
+            <th data-key="rostandelProcent" class="num sorted" tabindex="0">Röstandel<span class="arrow">↓</span></th>
+            <th data-key="antalRoster" class="num" tabindex="0">Röster<span class="arrow">↕</span></th>
+            <th data-key="rakningstillfalle" tabindex="0">Räkning<span class="arrow">↕</span></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>Källa: <code>resultat.val.se</code>, mandatfördelnings-JSON per kommun för kommunfullmäktigevalet 2026-09-13. Riksdagspartier borträknade: <span id="foot-riksdagspartier"></span>. Tröskel: ≥&nbsp;<span id="foot-tröskel"></span>&nbsp;% av rösterna i minst en kommun.</p>
+    <p>Genererad av <code>finn-partier-utanfor-riksdagen.mjs</code> · <span id="foot-tid"></span>. Bör köras om när fler kommuner får slutlig räkning.</p>
+  </footer>
+
+</div>
+
+<script id="payload" type="application/json">{"resultat":[{"parti":"OR","partinamn":"Oberoende Realister","kommun":"Hagfors","kommunkod":"1783","rostandelProcent":41.9,"antalRoster":2761,"rakningstillfalle":"preliminär"},{"parti":"DKL","partinamn":"Dorotea Kommunlista","kommun":"Dorotea","kommunkod":"2425","rostandelProcent":36.8,"antalRoster":403,"rakningstillfalle":"preliminär"},{"parti":"GÖF","partinamn":"Götenes framtid","kommun":"Götene","kommunkod":"1471","rostandelProcent":35,"antalRoster":2676,"rakningstillfalle":"preliminär"},{"parti":"FoAr","partinamn":"Folkinitiativet Arjeplog","kommun":"Arjeplog","kommunkod":"2506","rostandelProcent":33.4,"antalRoster":522,"rakningstillfalle":"preliminär"},{"parti":"ViP","partinamn":"Vi i Perstorp","kommun":"Perstorp","kommunkod":"1275","rostandelProcent":33,"antalRoster":1201,"rakningstillfalle":"preliminär"},{"parti":"KNU","partinamn":"Knivsta.Nu","kommun":"Knivsta","kommunkod":"0330","rostandelProcent":32.1,"antalRoster":4195,"rakningstillfalle":"preliminär"},{"parti":"HP","partinamn":"Hälleforspartiet","kommun":"Hällefors","kommunkod":"1863","rostandelProcent":28.4,"antalRoster":1064,"rakningstillfalle":"preliminär"},{"parti":"VFÅ","partinamn":"Vår Framtids politiska utskott","kommun":"Ånge","kommunkod":"2260","rostandelProcent":28.4,"antalRoster":1500,"rakningstillfalle":"preliminär"},{"parti":"NorrP","partinamn":"Norrlandspartiet","kommun":"Kramfors","kommunkod":"2282","rostandelProcent":25,"antalRoster":2697,"rakningstillfalle":"preliminär"},{"parti":"FFK","partinamn":"FRAM FÖR KOMMUNEN","kommun":"Grästorp","kommunkod":"1444","rostandelProcent":24.4,"antalRoster":758,"rakningstillfalle":"preliminär"},{"parti":"MiG","partinamn":"Medborgarpartiet i Gislaved (MiG)","kommun":"Gislaved","kommunkod":"0662","rostandelProcent":24.1,"antalRoster":4078,"rakningstillfalle":"preliminär"},{"parti":"ML","partinamn":"Malålistan","kommun":"Malå","kommunkod":"2418","rostandelProcent":22.2,"antalRoster":308,"rakningstillfalle":"preliminär"},{"parti":"SPVG","partinamn":"Sjukvårdspartiet - Västra Götaland","kommun":"Lidköping","kommunkod":"1494","rostandelProcent":22,"antalRoster":5602,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Övertorneå","kommunkod":"2518","rostandelProcent":21.3,"antalRoster":442,"rakningstillfalle":"preliminär"},{"parti":"Kons","partinamn":"Konsensus - För Vadstenas Bästa","kommun":"Vadstena","kommunkod":"0584","rostandelProcent":20.5,"antalRoster":919,"rakningstillfalle":"preliminär"},{"parti":"MOP","partinamn":"Morapartiet","kommun":"Mora","kommunkod":"2062","rostandelProcent":20.5,"antalRoster":2686,"rakningstillfalle":"preliminär"},{"parti":"DiN","partinamn":"Demokraterna i Norberg","kommun":"Norberg","kommunkod":"1962","rostandelProcent":20.3,"antalRoster":640,"rakningstillfalle":"preliminär"},{"parti":"VF","partinamn":"Vår Framtid","kommun":"Klippan","kommunkod":"1276","rostandelProcent":19.8,"antalRoster":1996,"rakningstillfalle":"preliminär"},{"parti":"ByP","partinamn":"Bygdepartiet","kommun":"Leksand","kommunkod":"2029","rostandelProcent":19.8,"antalRoster":2113,"rakningstillfalle":"preliminär"},{"parti":"VV","partinamn":"Västjämtlands Väl","kommun":"Åre","kommunkod":"2321","rostandelProcent":19.8,"antalRoster":1492,"rakningstillfalle":"preliminär"},{"parti":"WAX","partinamn":"Waxholmspartiet - borgerligt alternativ","kommun":"Vaxholm","kommunkod":"0187","rostandelProcent":19,"antalRoster":1434,"rakningstillfalle":"preliminär"},{"parti":"NU","partinamn":"Nya Ulricehamn","kommun":"Ulricehamn","kommunkod":"1491","rostandelProcent":18.4,"antalRoster":2654,"rakningstillfalle":"preliminär"},{"parti":"ÖrP","partinamn":"Örebropartiet","kommun":"Örebro","kommunkod":"1880","rostandelProcent":17.2,"antalRoster":17891,"rakningstillfalle":"preliminär"},{"parti":"JVB","partinamn":"Jämtlands Väl Bräcke","kommun":"Bräcke","kommunkod":"2305","rostandelProcent":15.4,"antalRoster":451,"rakningstillfalle":"preliminär"},{"parti":"Bollp","partinamn":"Bollnäspartiet","kommun":"Bollnäs","kommunkod":"2183","rostandelProcent":15.2,"antalRoster":2472,"rakningstillfalle":"preliminär"},{"parti":"LP","partinamn":"LIDINGÖPARTIET","kommun":"Lidingö","kommunkod":"0186","rostandelProcent":14.9,"antalRoster":4672,"rakningstillfalle":"preliminär"},{"parti":"SK","partinamn":"Surahammars kommunparti","kommun":"Surahammar","kommunkod":"1907","rostandelProcent":14.4,"antalRoster":814,"rakningstillfalle":"preliminär"},{"parti":"DO!T","partinamn":"De Oberoende i Torsby","kommun":"Torsby","kommunkod":"1737","rostandelProcent":14.1,"antalRoster":878,"rakningstillfalle":"preliminär"},{"parti":"LB","partinamn":"Löddebygden","kommun":"Kävlinge","kommunkod":"1261","rostandelProcent":14,"antalRoster":2963,"rakningstillfalle":"preliminär"},{"parti":"TList","partinamn":"Tierpslistan","kommun":"Tierp","kommunkod":"0360","rostandelProcent":13.7,"antalRoster":1825,"rakningstillfalle":"preliminär"},{"parti":"AnS","partinamn":"Ansvar i samverkan","kommun":"Munkedal","kommunkod":"1430","rostandelProcent":13.4,"antalRoster":790,"rakningstillfalle":"preliminär"},{"parti":"MED","partinamn":"Medborgerlig Samling","kommun":"Laholm","kommunkod":"1381","rostandelProcent":13.3,"antalRoster":2241,"rakningstillfalle":"preliminär"},{"parti":"SjvV","partinamn":"Sjukvårdspartiet i Värmland","kommun":"Säffle","kommunkod":"1785","rostandelProcent":13.3,"antalRoster":1110,"rakningstillfalle":"preliminär"},{"parti":"FJK","partinamn":"Framtid i Jokkmokks kommun","kommun":"Jokkmokk","kommunkod":"2510","rostandelProcent":13.2,"antalRoster":362,"rakningstillfalle":"preliminär"},{"parti":"VF","partinamn":"Vetlanda framåtanda","kommun":"Vetlanda","kommunkod":"0685","rostandelProcent":13.1,"antalRoster":2213,"rakningstillfalle":"preliminär"},{"parti":"St","partinamn":"Stenungsundspartiet","kommun":"Stenungsund","kommunkod":"1415","rostandelProcent":13,"antalRoster":2191,"rakningstillfalle":"preliminär"},{"parti":"Fok","partinamn":"Fokus","kommun":"Lomma","kommunkod":"1262","rostandelProcent":12.6,"antalRoster":2011,"rakningstillfalle":"preliminär"},{"parti":"FrSÖ","partinamn":"Framtid S Övertorneå","kommun":"Övertorneå","kommunkod":"2518","rostandelProcent":12.5,"antalRoster":260,"rakningstillfalle":"preliminär"},{"parti":"NL","partinamn":"Nackalistan","kommun":"Nacka","kommunkod":"0182","rostandelProcent":12.3,"antalRoster":8784,"rakningstillfalle":"preliminär"},{"parti":"FPO","partinamn":"Folkviljan Orust","kommun":"Orust","kommunkod":"1421","rostandelProcent":12.1,"antalRoster":1213,"rakningstillfalle":"preliminär"},{"parti":"NP","partinamn":"Nykvarnspartiet","kommun":"Nykvarn","kommunkod":"0140","rostandelProcent":12,"antalRoster":900,"rakningstillfalle":"preliminär"},{"parti":"SköP","partinamn":"Skövdepartiet","kommun":"Skövde","kommunkod":"1496","rostandelProcent":12,"antalRoster":4109,"rakningstillfalle":"preliminär"},{"parti":"BJP","partinamn":"Bjärepartiet","kommun":"Båstad","kommunkod":"1278","rostandelProcent":11.7,"antalRoster":1256,"rakningstillfalle":"preliminär"},{"parti":"DemR","partinamn":"Demokratiresan","kommun":"Sotenäs","kommunkod":"1427","rostandelProcent":11.7,"antalRoster":675,"rakningstillfalle":"preliminär"},{"parti":"LjP","partinamn":"Ljusdalsbygdens parti","kommun":"Ljusdal","kommunkod":"2161","rostandelProcent":11.7,"antalRoster":1312,"rakningstillfalle":"preliminär"},{"parti":"VB","partinamn":"Väsbys Bästa","kommun":"Upplands Väsby","kommunkod":"0114","rostandelProcent":11.3,"antalRoster":3040,"rakningstillfalle":"preliminär"},{"parti":"BÅP","partinamn":"Bålstapartiet","kommun":"Håbo","kommunkod":"0305","rostandelProcent":11.3,"antalRoster":1503,"rakningstillfalle":"preliminär"},{"parti":"HD","partinamn":"HåboDemokraterna","kommun":"Håbo","kommunkod":"0305","rostandelProcent":11.2,"antalRoster":1497,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Svenljunga","kommunkod":"1465","rostandelProcent":10.9,"antalRoster":665,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Nora","kommunkod":"1884","rostandelProcent":10.9,"antalRoster":669,"rakningstillfalle":"preliminär"},{"parti":"VFiK","partinamn":"Vanligt Folk i Köpings kommun","kommun":"Köping","kommunkod":"1983","rostandelProcent":10.5,"antalRoster":1434,"rakningstillfalle":"preliminär"},{"parti":"hvkb","partinamn":"Hela Vara kommuns bästa","kommun":"Vara","kommunkod":"1470","rostandelProcent":10.4,"antalRoster":1029,"rakningstillfalle":"preliminär"},{"parti":"TuP","partinamn":"Tullingepartiet","kommun":"Botkyrka","kommunkod":"0127","rostandelProcent":10.3,"antalRoster":4682,"rakningstillfalle":"preliminär"},{"parti":"TJÖP","partinamn":"TJÖRNPARTIET","kommun":"Tjörn","kommunkod":"1419","rostandelProcent":10.2,"antalRoster":1112,"rakningstillfalle":"preliminär"},{"parti":"ÅSP","partinamn":"Åselepartiet","kommun":"Åsele","kommunkod":"2463","rostandelProcent":10.2,"antalRoster":137,"rakningstillfalle":"preliminär"},{"parti":"SI","partinamn":"Söderköpingsinitiativet","kommun":"Söderköping","kommunkod":"0582","rostandelProcent":10.1,"antalRoster":972,"rakningstillfalle":"preliminär"},{"parti":"LL","partinamn":"Linköpingslistan","kommun":"Linköping","kommunkod":"0580","rostandelProcent":10,"antalRoster":10828,"rakningstillfalle":"preliminär"},{"parti":"LP.NU","partinamn":"Lysekilspartiet","kommun":"Lysekil","kommunkod":"1484","rostandelProcent":9.9,"antalRoster":901,"rakningstillfalle":"preliminär"},{"parti":"ArP","partinamn":"Arvikapartiet","kommun":"Arvika","kommunkod":"1784","rostandelProcent":9.9,"antalRoster":1458,"rakningstillfalle":"preliminär"},{"parti":"KOSA","partinamn":"Kommunal Samling","kommun":"Gagnef","kommunkod":"2026","rostandelProcent":9.9,"antalRoster":638,"rakningstillfalle":"preliminär"},{"parti":"TimP","partinamn":"Timråpartiet","kommun":"Timrå","kommunkod":"2262","rostandelProcent":9.8,"antalRoster":1103,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Lindesberg","kommunkod":"1885","rostandelProcent":9.6,"antalRoster":1330,"rakningstillfalle":"preliminär"},{"parti":"NorrP","partinamn":"Norrlandspartiet","kommun":"Timrå","kommunkod":"2262","rostandelProcent":9.6,"antalRoster":1071,"rakningstillfalle":"preliminär"},{"parti":"KL","partinamn":"Kommunlistan","kommun":"Älvdalen","kommunkod":"2039","rostandelProcent":9.2,"antalRoster":368,"rakningstillfalle":"preliminär"},{"parti":"ROP","partinamn":"Ronnebypartiet","kommun":"Ronneby","kommunkod":"1081","rostandelProcent":9.1,"antalRoster":1645,"rakningstillfalle":"preliminär"},{"parti":"NE","partinamn":"Nystart Enköping (NE)","kommun":"Enköping","kommunkod":"0381","rostandelProcent":8.9,"antalRoster":2696,"rakningstillfalle":"preliminär"},{"parti":"Alt","partinamn":"Alternativet","kommun":"Bromölla","kommunkod":"1272","rostandelProcent":8.9,"antalRoster":679,"rakningstillfalle":"preliminär"},{"parti":"JVK","partinamn":"Jämtlands Väl Krokom","kommun":"Krokom","kommunkod":"2309","rostandelProcent":8.9,"antalRoster":859,"rakningstillfalle":"preliminär"},{"parti":"SBÄ","partinamn":"Salas bästa","kommun":"Sala","kommunkod":"1981","rostandelProcent":8.7,"antalRoster":1229,"rakningstillfalle":"preliminär"},{"parti":"VS","partinamn":"Vårt Söderslätt","kommun":"Trelleborg","kommunkod":"1287","rostandelProcent":8.6,"antalRoster":2481,"rakningstillfalle":"preliminär"},{"parti":"KLH","partinamn":"Kommunlistan","kommun":"Hedemora","kommunkod":"2083","rostandelProcent":8.5,"antalRoster":752,"rakningstillfalle":"preliminär"},{"parti":"NorrP","partinamn":"Norrlandspartiet","kommun":"Sollefteå","kommunkod":"2283","rostandelProcent":8.4,"antalRoster":935,"rakningstillfalle":"preliminär"},{"parti":"HEL","partinamn":"Hela Edas Lista","kommun":"Eda","kommunkod":"1730","rostandelProcent":8.2,"antalRoster":313,"rakningstillfalle":"preliminär"},{"parti":"ALV","partinamn":"Alvesta Alternativet","kommun":"Alvesta","kommunkod":"0764","rostandelProcent":8.1,"antalRoster":967,"rakningstillfalle":"preliminär"},{"parti":"Ö","partinamn":"Mälaröpartiet","kommun":"Ekerö","kommunkod":"0125","rostandelProcent":8,"antalRoster":1442,"rakningstillfalle":"preliminär"},{"parti":"ÅP","partinamn":"Åstorpspartiet","kommun":"Åstorp","kommunkod":"1277","rostandelProcent":8,"antalRoster":702,"rakningstillfalle":"preliminär"},{"parti":"FOV","partinamn":"Folkets Väl","kommun":"Hässleholm","kommunkod":"1293","rostandelProcent":8,"antalRoster":2563,"rakningstillfalle":"preliminär"},{"parti":"NorrP","partinamn":"Norrlandspartiet","kommun":"Örnsköldsvik","kommunkod":"2284","rostandelProcent":7.8,"antalRoster":2770,"rakningstillfalle":"preliminär"},{"parti":"R","partinamn":"Rönningepartiet","kommun":"Salem","kommunkod":"0128","rostandelProcent":7.7,"antalRoster":714,"rakningstillfalle":"preliminär"},{"parti":"EP","partinamn":"EngelholmsPartiet","kommun":"Ängelholm","kommunkod":"1292","rostandelProcent":7.7,"antalRoster":2233,"rakningstillfalle":"preliminär"},{"parti":"DEM","partinamn":"Demokraterna","kommun":"Göteborg","kommunkod":"1480","rostandelProcent":7.7,"antalRoster":28221,"rakningstillfalle":"preliminär"},{"parti":"VSKB","partinamn":"Västra Initiativet","kommun":"Sollefteå","kommunkod":"2283","rostandelProcent":7.7,"antalRoster":856,"rakningstillfalle":"preliminär"},{"parti":"ASB","partinamn":"Aktiv samling - Bodenalternativet","kommun":"Boden","kommunkod":"2582","rostandelProcent":7.7,"antalRoster":1339,"rakningstillfalle":"preliminär"},{"parti":"NOR","partinamn":"Norapartiet","kommun":"Nora","kommunkod":"1884","rostandelProcent":7.6,"antalRoster":465,"rakningstillfalle":"preliminär"},{"parti":"AfR","partinamn":"Allt för Ragunda","kommun":"Ragunda","kommunkod":"2303","rostandelProcent":7.6,"antalRoster":213,"rakningstillfalle":"preliminär"},{"parti":"UddP","partinamn":"Uddevallapartiet","kommun":"Uddevalla","kommunkod":"1485","rostandelProcent":7.5,"antalRoster":2552,"rakningstillfalle":"preliminär"},{"parti":"Ddem","partinamn":"Dalademokraterna","kommun":"Ludvika","kommunkod":"2085","rostandelProcent":7.5,"antalRoster":1177,"rakningstillfalle":"preliminär"},{"parti":"LM","partinamn":"Lokalpartiet Malung-Sälen","kommun":"Malung-Sälen","kommunkod":"2023","rostandelProcent":7.3,"antalRoster":459,"rakningstillfalle":"preliminär"},{"parti":"nop","partinamn":"nordanstigspartiet.se","kommun":"Nordanstig","kommunkod":"2132","rostandelProcent":7.3,"antalRoster":409,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Haparanda","kommunkod":"2583","rostandelProcent":7.3,"antalRoster":284,"rakningstillfalle":"preliminär"},{"parti":"KiM","partinamn":"KommunPartiet Mellerud","kommun":"Mellerud","kommunkod":"1461","rostandelProcent":7.2,"antalRoster":397,"rakningstillfalle":"preliminär"},{"parti":"MED","partinamn":"Medborgerlig Samling","kommun":"Järfälla","kommunkod":"0123","rostandelProcent":7,"antalRoster":3450,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Kinda","kommunkod":"0513","rostandelProcent":6.9,"antalRoster":407,"rakningstillfalle":"preliminär"},{"parti":"Vfp","partinamn":"Medborgarpartiet","kommun":"Vänersborg","kommunkod":"1487","rostandelProcent":6.9,"antalRoster":1708,"rakningstillfalle":"preliminär"},{"parti":"FÖL","partinamn":"Framtid Öland","kommun":"Borgholm","kommunkod":"0885","rostandelProcent":6.7,"antalRoster":492,"rakningstillfalle":"preliminär"},{"parti":"HfH","partinamn":"Hjärta för Halmstad","kommun":"Halmstad","kommunkod":"1380","rostandelProcent":6.7,"antalRoster":4474,"rakningstillfalle":"preliminär"},{"parti":"SN","partinamn":"Sorundanet Nynäshamns kommunparti","kommun":"Nynäshamn","kommunkod":"0192","rostandelProcent":6.6,"antalRoster":1163,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Valdemarsvik","kommunkod":"0563","rostandelProcent":6.6,"antalRoster":325,"rakningstillfalle":"preliminär"},{"parti":"VOXH","partinamn":"Vox Humana - Folkets Röst","kommun":"Härjedalen","kommunkod":"2361","rostandelProcent":6.6,"antalRoster":408,"rakningstillfalle":"preliminär"},{"parti":"ÄS","partinamn":"Älska Svedala","kommun":"Svedala","kommunkod":"1263","rostandelProcent":6.4,"antalRoster":925,"rakningstillfalle":"preliminär"},{"parti":"HS","partinamn":"Hela Sunne","kommun":"Sunne","kommunkod":"1766","rostandelProcent":6.3,"antalRoster":502,"rakningstillfalle":"preliminär"},{"parti":"NorrP","partinamn":"Norrlandspartiet","kommun":"Härnösand","kommunkod":"2280","rostandelProcent":6.3,"antalRoster":967,"rakningstillfalle":"preliminär"},{"parti":"ROSP","partinamn":"Roslagspartiet","kommun":"Österåker","kommunkod":"0117","rostandelProcent":6.1,"antalRoster":1869,"rakningstillfalle":"preliminär"},{"parti":"NorrP","partinamn":"Norrlandspartiet","kommun":"Ånge","kommunkod":"2260","rostandelProcent":6,"antalRoster":317,"rakningstillfalle":"preliminär"},{"parti":"FR","partinamn":"Folkets Röst","kommun":"Bollebygd","kommunkod":"1443","rostandelProcent":5.9,"antalRoster":352,"rakningstillfalle":"preliminär"},{"parti":"FöNyL","partinamn":"FörNyaLund","kommun":"Lund","kommunkod":"1281","rostandelProcent":5.7,"antalRoster":4894,"rakningstillfalle":"preliminär"},{"parti":"ViP","partinamn":"Vingåkerspartiet - ViP","kommun":"Vingåker","kommunkod":"0428","rostandelProcent":5.5,"antalRoster":301,"rakningstillfalle":"preliminär"},{"parti":"VT","partinamn":"Vi Tidaholm","kommun":"Tidaholm","kommunkod":"1498","rostandelProcent":5.5,"antalRoster":399,"rakningstillfalle":"preliminär"},{"parti":"SKL","partinamn":"Kommunlistan","kommun":"Storuman","kommunkod":"2421","rostandelProcent":5.4,"antalRoster":164,"rakningstillfalle":"preliminär"},{"parti":"SL","partinamn":"Sámelistu/Samelistan Partipolitiskt obunden","kommun":"Kiruna","kommunkod":"2584","rostandelProcent":5.3,"antalRoster":690,"rakningstillfalle":"preliminär"},{"parti":"LOK","partinamn":"Lokalpartiet","kommun":"Strängnäs","kommunkod":"0486","rostandelProcent":5,"antalRoster":1164,"rakningstillfalle":"preliminär"},{"parti":"MED","partinamn":"Medborgerlig Samling","kommun":"Mullsjö","kommunkod":"0642","rostandelProcent":5,"antalRoster":225,"rakningstillfalle":"preliminär"},{"parti":"SAFE","partinamn":"SAFE - Solidaritet Arbete Fred Ekologi","kommun":"Nässjö","kommunkod":"0682","rostandelProcent":5,"antalRoster":961,"rakningstillfalle":"preliminär"},{"parti":"SOKP","partinamn":"SPORT- OCH KOMMUNPARTIET","kommun":"Härryda","kommunkod":"1401","rostandelProcent":5,"antalRoster":1217,"rakningstillfalle":"preliminär"},{"parti":"DP","partinamn":"Drevvikenpartiet","kommun":"Huddinge","kommunkod":"0126","rostandelProcent":4.9,"antalRoster":3026,"rakningstillfalle":"preliminär"},{"parti":"SV","partinamn":"Samernas Väl","kommun":"Jokkmokk","kommunkod":"2510","rostandelProcent":4.9,"antalRoster":136,"rakningstillfalle":"preliminär"},{"parti":"KFP","partinamn":"Kristna Familjepartiet","kommun":"Botkyrka","kommunkod":"0127","rostandelProcent":4.7,"antalRoster":2141,"rakningstillfalle":"preliminär"},{"parti":"HaboD","partinamn":"Habodemokraterna","kommun":"Habo","kommunkod":"0643","rostandelProcent":4.7,"antalRoster":367,"rakningstillfalle":"preliminär"},{"parti":"SFB","partinamn":"Sunt Förnuft Bengtsfors","kommun":"Bengtsfors","kommunkod":"1460","rostandelProcent":4.6,"antalRoster":222,"rakningstillfalle":"preliminär"},{"parti":"K","partinamn":"Kommunistiska Partiet","kommun":"Lysekil","kommunkod":"1484","rostandelProcent":4.6,"antalRoster":418,"rakningstillfalle":"preliminär"},{"parti":"HP","partinamn":"Herrljunga Partiet","kommun":"Herrljunga","kommunkod":"1466","rostandelProcent":4.5,"antalRoster":252,"rakningstillfalle":"preliminär"},{"parti":"UtvP","partinamn":"Utvecklingspartiet","kommun":"Kungälv","kommunkod":"1482","rostandelProcent":4.5,"antalRoster":1412,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Kiruna","kommunkod":"2584","rostandelProcent":4.5,"antalRoster":583,"rakningstillfalle":"preliminär"},{"parti":"KV","partinamn":"Kommunens Väl","kommun":"Älvkarleby","kommunkod":"0319","rostandelProcent":4.4,"antalRoster":260,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Boden","kommunkod":"2582","rostandelProcent":4.4,"antalRoster":765,"rakningstillfalle":"preliminär"},{"parti":"MED","partinamn":"Medborgerlig Samling","kommun":"Karlshamn","kommunkod":"1082","rostandelProcent":4.3,"antalRoster":870,"rakningstillfalle":"preliminär"},{"parti":"PSF","partinamn":"Partiet Sunt Förnuft","kommun":"Vänersborg","kommunkod":"1487","rostandelProcent":4.3,"antalRoster":1063,"rakningstillfalle":"preliminär"},{"parti":"LVD","partinamn":"Livbojen Vaxholmsdemokraterna","kommun":"Vaxholm","kommunkod":"0187","rostandelProcent":4.2,"antalRoster":319,"rakningstillfalle":"preliminär"},{"parti":"REAL","partinamn":"Realistpartiet","kommun":"Södertälje","kommunkod":"0181","rostandelProcent":4.1,"antalRoster":2126,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Askersund","kommunkod":"1882","rostandelProcent":4.1,"antalRoster":300,"rakningstillfalle":"preliminär"},{"parti":"KUST","partinamn":"KUSTLANDSPARTIET","kommun":"Oskarshamn","kommunkod":"0882","rostandelProcent":3.9,"antalRoster":671,"rakningstillfalle":"preliminär"},{"parti":"PF","partinamn":"Perstorps Framtid","kommun":"Perstorp","kommunkod":"1275","rostandelProcent":3.9,"antalRoster":143,"rakningstillfalle":"preliminär"},{"parti":"Mal","partinamn":"Malmölistan","kommun":"Malmö","kommunkod":"1280","rostandelProcent":3.9,"antalRoster":8375,"rakningstillfalle":"preliminär"},{"parti":"NorrP","partinamn":"Norrlandspartiet","kommun":"Sundsvall","kommunkod":"2281","rostandelProcent":3.9,"antalRoster":2511,"rakningstillfalle":"preliminär"},{"parti":"SGP","partinamn":"Skärgårdspartiet","kommun":"Värmdö","kommunkod":"0120","rostandelProcent":3.8,"antalRoster":1116,"rakningstillfalle":"preliminär"},{"parti":"KVS","partinamn":"Kommunens Väl","kommun":"Skurup","kommunkod":"1264","rostandelProcent":3.6,"antalRoster":373,"rakningstillfalle":"preliminär"},{"parti":"Tfs","partinamn":"tjugofyrasju","kommun":"Varberg","kommunkod":"1383","rostandelProcent":3.6,"antalRoster":1491,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Piteå","kommunkod":"2581","rostandelProcent":3.6,"antalRoster":1020,"rakningstillfalle":"preliminär"},{"parti":"BAP","partinamn":"BARAPARTIET","kommun":"Svedala","kommunkod":"1263","rostandelProcent":3.5,"antalRoster":507,"rakningstillfalle":"preliminär"},{"parti":"Kbabo","partinamn":"Kungsbackaborna","kommun":"Kungsbacka","kommunkod":"1384","rostandelProcent":3.5,"antalRoster":1840,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Kalix","kommunkod":"2514","rostandelProcent":3.5,"antalRoster":308,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Pajala","kommunkod":"2521","rostandelProcent":3.5,"antalRoster":115,"rakningstillfalle":"preliminär"},{"parti":"SoL","partinamn":"SoL-partiet Sölvesborg och Lister","kommun":"Sölvesborg","kommunkod":"1083","rostandelProcent":3.4,"antalRoster":373,"rakningstillfalle":"preliminär"},{"parti":"Lap","partinamn":"Laholmspartiet","kommun":"Laholm","kommunkod":"1381","rostandelProcent":3.4,"antalRoster":565,"rakningstillfalle":"preliminär"},{"parti":"VP","partinamn":"Varbergspartiet","kommun":"Varberg","kommunkod":"1383","rostandelProcent":3.4,"antalRoster":1407,"rakningstillfalle":"preliminär"},{"parti":"FiA","partinamn":"FRAMTID I ALE","kommun":"Ale","kommunkod":"1440","rostandelProcent":3.3,"antalRoster":647,"rakningstillfalle":"preliminär"},{"parti":"AP","partinamn":"Demokratiska Sekulära Socialister Arbetarpartiet","kommun":"Umeå","kommunkod":"2480","rostandelProcent":3.3,"antalRoster":2884,"rakningstillfalle":"preliminär"},{"parti":"BoA","partinamn":"Lokalpartiet BoA","kommun":"Östhammar","kommunkod":"0382","rostandelProcent":3.2,"antalRoster":464,"rakningstillfalle":"preliminär"},{"parti":"EMP","partinamn":"EMPA(R)TIET","kommun":"Vaggeryd","kommunkod":"0665","rostandelProcent":3.2,"antalRoster":295,"rakningstillfalle":"preliminär"},{"parti":"HF","partinamn":"Hörbys Framtid","kommun":"Hörby","kommunkod":"1266","rostandelProcent":3.2,"antalRoster":309,"rakningstillfalle":"preliminär"},{"parti":"PA","partinamn":"Politiskt Alternativ","kommun":"Vilhelmina","kommunkod":"2462","rostandelProcent":3.2,"antalRoster":119,"rakningstillfalle":"preliminär"},{"parti":"Komv","partinamn":"Kommunens Väl","kommun":"Hylte","kommunkod":"1315","rostandelProcent":3,"antalRoster":166,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Sollefteå","kommunkod":"2283","rostandelProcent":3,"antalRoster":334,"rakningstillfalle":"preliminär"},{"parti":"OS","partinamn":"Oberoende S","kommun":"Botkyrka","kommunkod":"0127","rostandelProcent":2.8,"antalRoster":1297,"rakningstillfalle":"preliminär"},{"parti":"ÅF","partinamn":"Åtvidabergs Framtid","kommun":"Åtvidaberg","kommunkod":"0561","rostandelProcent":2.8,"antalRoster":186,"rakningstillfalle":"preliminär"},{"parti":"SoB","partinamn":"Sans o Balans","kommun":"Hammarö","kommunkod":"1761","rostandelProcent":2.8,"antalRoster":289,"rakningstillfalle":"preliminär"},{"parti":"LPo","partinamn":"Landsbygdspartiet Oberoende","kommun":"Malung-Sälen","kommunkod":"2023","rostandelProcent":2.8,"antalRoster":173,"rakningstillfalle":"preliminär"},{"parti":"OÅ","partinamn":"OPiNiON Åsele","kommun":"Åsele","kommunkod":"2463","rostandelProcent":2.7,"antalRoster":36,"rakningstillfalle":"preliminär"},{"parti":"SA","partinamn":"Socialistiskt Alternativ tidigare Rättvisepartiet Socialisterna","kommun":"Luleå","kommunkod":"2580","rostandelProcent":2.7,"antalRoster":1391,"rakningstillfalle":"preliminär"},{"parti":"WeP","partinamn":"Westbopartiet","kommun":"Gislaved","kommunkod":"0662","rostandelProcent":2.6,"antalRoster":443,"rakningstillfalle":"preliminär"},{"parti":"KIS","partinamn":"Klimatinitiativ Simrishamn","kommun":"Simrishamn","kommunkod":"1291","rostandelProcent":2.6,"antalRoster":327,"rakningstillfalle":"preliminär"},{"parti":"FL","partinamn":"Framtidspartiet i Lekeberg","kommun":"Lekeberg","kommunkod":"1814","rostandelProcent":2.6,"antalRoster":135,"rakningstillfalle":"preliminär"},{"parti":"PP(N)","partinamn":"Pensionärspartiet i Nynäshamns kommun","kommun":"Nynäshamn","kommunkod":"0192","rostandelProcent":2.5,"antalRoster":434,"rakningstillfalle":"preliminär"},{"parti":"UPDEM","partinamn":"Utvecklingspartiet demokraterna","kommun":"Uppsala","kommunkod":"0380","rostandelProcent":2.5,"antalRoster":3829,"rakningstillfalle":"preliminär"},{"parti":"LIH","partinamn":"Liberalt initiativ Habo kommun","kommun":"Habo","kommunkod":"0643","rostandelProcent":2.5,"antalRoster":194,"rakningstillfalle":"preliminär"},{"parti":"HP","partinamn":"Halmstadpartiet","kommun":"Halmstad","kommunkod":"1380","rostandelProcent":2.5,"antalRoster":1649,"rakningstillfalle":"preliminär"},{"parti":"MED","partinamn":"Medborgerlig Samling","kommun":"Gislaved","kommunkod":"0662","rostandelProcent":2.3,"antalRoster":393,"rakningstillfalle":"preliminär"},{"parti":"Nvk","partinamn":"Nordvärmlands kommunparti","kommun":"Torsby","kommunkod":"1737","rostandelProcent":2.3,"antalRoster":141,"rakningstillfalle":"preliminär"},{"parti":"MED","partinamn":"Medborgerlig Samling","kommun":"Höör","kommunkod":"1267","rostandelProcent":2.2,"antalRoster":238,"rakningstillfalle":"preliminär"},{"parti":"SJV","partinamn":"Sjukvårdspartiet","kommun":"Gällivare","kommunkod":"2523","rostandelProcent":2.2,"antalRoster":216,"rakningstillfalle":"preliminär"},{"parti":"HP","partinamn":"Huddingepartiet","kommun":"Huddinge","kommunkod":"0126","rostandelProcent":2,"antalRoster":1254,"rakningstillfalle":"preliminär"}],"meta":{"genererad":"2026-09-15T08:53:52.719Z","antalKommunerIIndex":290,"antalKommunerMedSlutligRakning":0,"minRostandelProcent":2,"riksdagspartier":["S","M","SD","C","V","KD","L","MP"],"antalOfullstandigaKommuner":290,"riskKommuner":[{"kommun":"Flen","kommunkod":"0482","ovrigaPct":9.8},{"kommun":"Kungälv","kommunkod":"1482","ovrigaPct":7.0},{"kommun":"Gullspång","kommunkod":"1447","ovrigaPct":6.2},{"kommun":"Nybro","kommunkod":"0881","ovrigaPct":5.5},{"kommun":"Hultsfred","kommunkod":"0860","ovrigaPct":2.9},{"kommun":"Katrineholm","kommunkod":"0483","ovrigaPct":2.7},{"kommun":"Vellinge","kommunkod":"1233","ovrigaPct":2.2},{"kommun":"Eskilstuna","kommunkod":"0484","ovrigaPct":2.0}],"antalTraffar":171,"antalUnikaPartier":141,"antalKommunerMedTraff":143}}</script>
+<script>
+(function () {
+  "use strict";
+  var data = JSON.parse(document.getElementById("payload").textContent);
+  var resultat = data.resultat;
+  var meta = data.meta;
+
+  var riskCodes = {};
+  meta.riskKommuner.forEach(function (r) { riskCodes[r.kommunkod] = r.ovrigaPct; });
+
+  function sv1(n) {
+    return (Math.round(n * 10) / 10).toString().replace(".", ",");
+  }
+  function svInt(n) {
+    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+
+  // ---- Masthead stamp ----
+  var genDate = new Date(meta.genererad);
+  document.getElementById("stamp-date").textContent = genDate.toLocaleDateString("sv-SE", { day: "numeric", month: "long", year: "numeric" });
+
+  // ---- Stat tiles ----
+  document.getElementById("stat-kommuner").textContent = meta.antalKommunerIIndex;
+  document.getElementById("stat-slutlig").textContent = meta.antalKommunerMedSlutligRakning + " / " + meta.antalKommunerIIndex;
+  document.getElementById("stat-traffar").textContent = meta.antalTraffar;
+  document.getElementById("stat-partier").textContent = meta.antalUnikaPartier;
+  document.getElementById("stat-risk").textContent = meta.riskKommuner.length;
+
+  document.getElementById("caveat-slutlig-text").textContent = meta.antalKommunerMedSlutligRakning + " av " + meta.antalKommunerIIndex;
+  document.getElementById("caveat-risk-count").textContent = meta.riskKommuner.length;
+
+  var riskList = document.getElementById("risk-list");
+  meta.riskKommuner.forEach(function (r) {
+    var li = document.createElement("li");
+    li.className = "risk-chip";
+    li.innerHTML = r.kommun + " <b>" + sv1(r.ovrigaPct) + " %</b>";
+    riskList.appendChild(li);
+  });
+
+  // ---- Footer ----
+  document.getElementById("foot-riksdagspartier").textContent = meta.riksdagspartier.join(", ");
+  document.getElementById("foot-tröskel").textContent = sv1(meta.minRostandelProcent);
+  document.getElementById("foot-tid").textContent = genDate.toLocaleString("sv-SE");
+
+  // ---- Ranked bar chart (top 15) ----
+  var top = resultat.slice(0, 15);
+  var max = top.length ? top[0].rostandelProcent : 1;
+  var chart = document.getElementById("chart");
+  top.forEach(function (r) {
+    var row = document.createElement("div");
+    row.className = "chart-row";
+    var who = document.createElement("div");
+    who.className = "who";
+    who.innerHTML = "<b>" + r.parti + "</b> · " + r.kommun;
+    var track = document.createElement("div");
+    track.className = "chart-track";
+    var fill = document.createElement("div");
+    fill.className = "chart-fill";
+    fill.style.width = Math.max(2, (r.rostandelProcent / max) * 100) + "%";
+    track.appendChild(fill);
+    var val = document.createElement("div");
+    val.className = "val";
+    val.textContent = sv1(r.rostandelProcent) + " %";
+    row.appendChild(who);
+    row.appendChild(track);
+    row.appendChild(val);
+    chart.appendChild(row);
+  });
+
+  // ---- Table ----
+  var tbody = document.getElementById("tbody");
+  var filterInput = document.getElementById("filter");
+  var resultCount = document.getElementById("result-count");
+  var sortKey = "rostandelProcent";
+  var sortDir = -1;
+
+  function render() {
+    var q = filterInput.value.trim().toLowerCase();
+    var rows = resultat.filter(function (r) {
+      if (!q) return true;
+      return (r.parti + " " + r.partinamn + " " + r.kommun).toLowerCase().indexOf(q) !== -1;
+    });
+    rows.sort(function (a, b) {
+      var av = a[sortKey], bv = b[sortKey];
+      if (typeof av === "string") { av = av.toLowerCase(); bv = bv.toLowerCase(); }
+      if (av < bv) return -1 * sortDir;
+      if (av > bv) return 1 * sortDir;
+      return 0;
+    });
+    tbody.innerHTML = "";
+    rows.forEach(function (r) {
+      var tr = document.createElement("tr");
+      var risky = riskCodes.hasOwnProperty(r.kommunkod);
+      tr.innerHTML =
+        "<td class=\"parti\">" + r.parti + "</td>" +
+        "<td class=\"namn\">" + r.partinamn + "</td>" +
+        "<td>" + r.kommun + (risky ? "<span class=\"risk-mark\" title=\"Övriga anmälda partier utgör ≥ 2 % av rösterna i denna kommun – fler partier kan ligga dolda där.\">*</span>" : "") + "</td>" +
+        "<td class=\"kod\">" + r.kommunkod + "</td>" +
+        "<td class=\"num\">" + sv1(r.rostandelProcent) + " %</td>" +
+        "<td class=\"num\">" + svInt(r.antalRoster) + "</td>" +
+        "<td><span class=\"badge-prel\">" + r.rakningstillfalle + "</span></td>";
+      tbody.appendChild(tr);
+    });
+    resultCount.textContent = rows.length + " av " + resultat.length + " rader";
+  }
+
+  document.querySelectorAll("thead th").forEach(function (th) {
+    th.addEventListener("click", function () {
+      var key = th.getAttribute("data-key");
+      if (sortKey === key) {
+        sortDir *= -1;
+      } else {
+        sortKey = key;
+        sortDir = (key === "rostandelProcent" || key === "antalRoster") ? -1 : 1;
+      }
+      document.querySelectorAll("thead th").forEach(function (o) {
+        o.classList.remove("sorted");
+        o.querySelector(".arrow").textContent = "↕";
+      });
+      th.classList.add("sorted");
+      th.querySelector(".arrow").textContent = sortDir === 1 ? "↑" : "↓";
+      render();
+    });
+    th.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); th.click(); }
+    });
+  });
+  filterInput.addEventListener("input", render);
+
+  render();
+})();
+</script>
